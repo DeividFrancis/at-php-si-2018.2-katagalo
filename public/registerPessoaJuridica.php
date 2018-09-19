@@ -1,43 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="author" content="Site Mercado" />
-    <title>Nome do Mercado - KataGalo</title>
-
-    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
-
-
-    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
-    <meta name="theme-color" content="#17a2b8">
-
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#17a2b8">
-
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#17a2b8">
-
-    <!-- Google Ajax -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/v4-shims.js"></script>
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-</head>
+<?php 
+require_once "../config.php";
+require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
     <header>
@@ -106,7 +69,8 @@
                         <div class="col-md-6">
                             <!-- CNPJ -->
                             <div class="md-form">
-                                <input type="text" class="form-control" required placeholder="00.000.000/0000-00" id="cnpjPessoaJuridica" maxlength="18" autocomplete="off">
+                                <input type="text" class="form-control" required placeholder="00.000.000/0000-00" id="cnpjPessoaJuridica"
+                                    maxlength="18" autocomplete="off">
                                 <label for="cnpjPessoaJuridica">CNPJ</label>
                             </div> <!-- ./End md-form -->
                         </div><!-- ./End col-md-6 -->
@@ -154,7 +118,8 @@
                             <div class="md-form">
                                 <select class="mdb-select md-form colorful-select dropdown-info" required id="seguimentoEmpresaPessoaJuridica">
                                     <option value="1">Academias</option>
-                                    <option value="2">Adm, Consultoria, Contabilidade, Advocacia, Publicidade e outros escritórios</option>
+                                    <option value="2">Adm, Consultoria, Contabilidade, Advocacia, Publicidade e outros
+                                        escritórios</option>
                                     <option value="4">Armazéns e Logística</option>
                                     <option value="5">Comércio atacadista, Varejista e Representação comercial</option>
                                     <option value="6">Engenharia, Construção Civil e Arquitetura</option>
@@ -163,7 +128,8 @@
                                     <option value="9">Indústrias</option>
                                     <option value="10">Medicina e Veterinária</option>
                                     <option value="11">ONGs, Sindicatos e Associações</option>
-                                    <option value="12">Prestação de serviços (profissionais liberais, oficinas, cabeleireiros e outros)</option>
+                                    <option value="12">Prestação de serviços (profissionais liberais, oficinas,
+                                        cabeleireiros e outros)</option>
                                     <option value="13">Restaurantes e Fast Food</option>
                                     <option value="14">Turismo e Hotelaria</option>
                                     <option value="15">Outros</option>
@@ -220,7 +186,8 @@
                     </div> <!-- ./end text-center float-left col-md-6 d-block small mt-2 -->
 
                     <div class="text-center float-right col-md-6 d-block small mt-2">
-                        <a class="btn btn-info btn-block btn-md" id="btnLoginPessoaJuridica" href="loginPessoaJuridica.php">Já possui conta?</a>
+                        <a class="btn btn-info btn-block btn-md" id="btnLoginPessoaJuridica" href="loginPessoaJuridica.php">Já
+                            possui conta?</a>
                     </div> <!-- ./End text-center float-right col-md-6 d-block small mt-2 -->
             </div>
         </div><!-- ./End Material form register -->

@@ -1,43 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="author" content="Site Mercado" />
-    <title>Nome do Mercado - KataGalo</title>
-
-    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
-
-    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
-    <meta name="theme-color" content="#17a2b8">
-
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#17a2b8">
-
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#17a2b8">
-
-    <!-- Google Ajax -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/v4-shims.js"></script>
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-</head>
+<?php 
+require_once "../config.php";
+require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
     <header>
@@ -154,7 +117,9 @@
             <form class="search-form form-inline mr-auto ml-auto mr-md-5 my-2 my-md-0" role="search" method="POST"
                 autocomplete="on">
                 <div class="input-group waves-dark">
-                    <input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-2 my-md-2" id="input-pesq" size="80px" placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2" style="height: 3.0rem;">
+                    <input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-2 my-md-2" id="input-pesq"
+                        size="80px" placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2"
+                        style="height: 3.0rem;">
                 </div>
             </form>
 
@@ -226,26 +191,30 @@
                             <div class="card card-cascade narrower card-ecommerce">
                                 <div class="align-items-center overlay img-produtos container animated bounceIn">
                                     <a href="produto-page.php">
-                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
-									</a>
-									<div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-									<div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
-								</div> <!-- Card image -->
+                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
+                                            alt="">
+                                    </a>
+                                    <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                    <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                </div> <!-- Card image -->
                                 <div class="card-body card-body-cascade text-center">
-									<a href="produto-page.php">
-                                		<p class="card-title my-4 animated bounceIn">
-											<strong>Produto 1</strong>
-										</p>
-									</a>
+                                    <a href="produto-page.php">
+                                        <p class="card-title my-4 animated bounceIn">
+                                            <strong>Produto 1</strong>
+                                        </p>
+                                    </a>
                                     <!-- Card footer -->
                                     <div class="card-footer px-1">
                                         <span class="float-left"><del>R$ 0,00</del></span>
                                         <span class="text-center">R$ 0,00</span>
                                         <span class="float-right">
-                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação"> 
-												<i class="fas fa-bell"></i></a>
-                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
-												<i class="fas fa-heart"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                                data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                                <i class="fas fa-bell"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                                data-placement="top" title="Adicionar aos favoritos"
+                                                data-original-title="Adicionar aos favoritos">
+                                                <i class="fas fa-heart"></i></a>
                                             <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                         </span> <!-- ./End float-right -->
                                     </div> <!-- ./End card-footer px-1 -->
@@ -257,26 +226,30 @@
                             <div class="card card-cascade narrower card-ecommerce">
                                 <div class="align-items-center overlay img-produtos container animated bounceIn">
                                     <a href="produto-page.php">
-                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
-									</a>
-									<div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-									<div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
-								</div> <!-- Card image -->
-								
+                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
+                                            alt="">
+                                    </a>
+                                    <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                    <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                </div> <!-- Card image -->
+
                                 <div class="card-body card-body-cascade text-center">
-									<a href="produto-page.php">
-                                		<p class="card-title my-4 animated bounceIn"><strong>Produto 2</strong></p>
-									</a>
-									
+                                    <a href="produto-page.php">
+                                        <p class="card-title my-4 animated bounceIn"><strong>Produto 2</strong></p>
+                                    </a>
+
                                     <!-- Card footer -->
                                     <div class="card-footer px-1">
                                         <span class="float-left"><del>R$ 0,00</del></span>
                                         <span class="text-center">R$ 0,00</span>
                                         <span class="float-right">
-                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
-												<i class="fas fa-bell"></i></a>
-                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
-												<i class="fas fa-heart"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                                data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                                <i class="fas fa-bell"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                                data-placement="top" title="Adicionar aos favoritos"
+                                                data-original-title="Adicionar aos favoritos">
+                                                <i class="fas fa-heart"></i></a>
                                             <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                         </span> <!-- ./End float-right -->
                                     </div> <!-- ./End card-footer px-1 -->
@@ -288,24 +261,28 @@
                             <div class="card card-cascade narrower card-ecommerce">
                                 <div class="align-items-center overlay img-produtos container animated bounceIn">
                                     <a href="produto-page.php">
-                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
-									</a>
-									<div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-									<div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
-								</div> <!-- Card image -->
+                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
+                                            alt="">
+                                    </a>
+                                    <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                    <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                </div> <!-- Card image -->
                                 <div class="card-body card-body-cascade text-center">
-									<a href="produto-page.php">
-                                		<p class="card-title my-4 animated bounceIn"><strong>Produto 3</strong></p>
-									</a>
+                                    <a href="produto-page.php">
+                                        <p class="card-title my-4 animated bounceIn"><strong>Produto 3</strong></p>
+                                    </a>
                                     <!-- Card footer -->
                                     <div class="card-footer px-1">
                                         <span class="float-left"><del>R$ 0,00</del></span>
                                         <span class="text-center">R$ 0,00</span>
                                         <span class="float-right">
-                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
-												<i class="fas fa-bell"></i></a>
-                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
-												<i class="fas fa-heart"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                                data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                                <i class="fas fa-bell"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                                data-placement="top" title="Adicionar aos favoritos"
+                                                data-original-title="Adicionar aos favoritos">
+                                                <i class="fas fa-heart"></i></a>
                                             <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                         </span> <!-- ./End float-right -->
                                     </div> <!-- ./End card-footer px-1 -->
@@ -320,53 +297,28 @@
                             <div class="card card-cascade narrower card-ecommerce">
                                 <div class="align-items-center overlay img-produtos container animated bounceIn">
                                     <a href="produto-page.php">
-                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
-									</a>
-									<div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-									<div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
-								</div> <!-- Card image -->
-                                <div class="card-body card-body-cascade text-center">
-									<a href="produto-page.php">
-                                		<p class="card-title my-4 animated bounceIn"><strong>Produto 4</strong></p>
-                           			</a>
-                                    <!-- Card footer -->
-                                    <div class="card-footer px-1">
-                                        <span class="float-left"><del>R$ 0,00</del></span>
-                                        <span class="text-center">R$ 0,00</span>
-                                        <span class="float-right">
-                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação"> 
-												<i class="fas fa-bell"></i></a>
-                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
-												<i class="fas fa-heart"></i></a>
-                                            <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
-                                        </span> <!-- ./End float-right -->
-                                    </div> <!-- ./End card-footer px-1 -->
-                                </div> <!-- ./End card-body card-body-cascade text-center -->
-                            </div><!-- ./End card card-cascade narrower card-ecommerce -->
-                        </div> <!-- ./End col-md-4 mb-2 clearfix d-md-block -->
-
-                        <div class="col-md-4 mb-2 clearfix d-none d-md-block">
-                            <div class="card card-cascade narrower card-ecommerce">
-                                <div class="align-items-center overlay img-produtos container animated bounceIn">
-                                    <a href="produto-page.php">
-                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
-									</a>
-									<div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-									<div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
+                                            alt="">
+                                    </a>
+                                    <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                    <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
                                 </div> <!-- Card image -->
                                 <div class="card-body card-body-cascade text-center">
-									<a href="produto-page.php">
-                                		<p class="card-title my-4 animated bounceIn"><strong>Produto 5</strong></p>
-                           			</a>
+                                    <a href="produto-page.php">
+                                        <p class="card-title my-4 animated bounceIn"><strong>Produto 4</strong></p>
+                                    </a>
                                     <!-- Card footer -->
                                     <div class="card-footer px-1">
                                         <span class="float-left"><del>R$ 0,00</del></span>
                                         <span class="text-center">R$ 0,00</span>
                                         <span class="float-right">
-                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
-												<i class="fas fa-bell"></i></a>
-                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" 	data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
-												<i class="fas fa-heart"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                                data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                                <i class="fas fa-bell"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                                data-placement="top" title="Adicionar aos favoritos"
+                                                data-original-title="Adicionar aos favoritos">
+                                                <i class="fas fa-heart"></i></a>
                                             <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                         </span> <!-- ./End float-right -->
                                     </div> <!-- ./End card-footer px-1 -->
@@ -378,24 +330,61 @@
                             <div class="card card-cascade narrower card-ecommerce">
                                 <div class="align-items-center overlay img-produtos container animated bounceIn">
                                     <a href="produto-page.php">
-                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
+                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
+                                            alt="">
                                     </a>
-									<div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-									<div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
-								</div> <!-- Card image -->
+                                    <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                    <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                </div> <!-- Card image -->
                                 <div class="card-body card-body-cascade text-center">
-									<a href="produto-page.php">
-                                		<p class="card-title my-4 animated bounceIn"><strong>Produto 6</strong></p>
-                           			</a>
+                                    <a href="produto-page.php">
+                                        <p class="card-title my-4 animated bounceIn"><strong>Produto 5</strong></p>
+                                    </a>
                                     <!-- Card footer -->
                                     <div class="card-footer px-1">
                                         <span class="float-left"><del>R$ 0,00</del></span>
                                         <span class="text-center">R$ 0,00</span>
                                         <span class="float-right">
-                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
-												<i class="fas fa-bell"></i></a>
-                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
-												<i class="fas fa-heart"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                                data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                                <i class="fas fa-bell"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                                data-placement="top" title="Adicionar aos favoritos"
+                                                data-original-title="Adicionar aos favoritos">
+                                                <i class="fas fa-heart"></i></a>
+                                            <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
+                                        </span> <!-- ./End float-right -->
+                                    </div> <!-- ./End card-footer px-1 -->
+                                </div> <!-- ./End card-body card-body-cascade text-center -->
+                            </div><!-- ./End card card-cascade narrower card-ecommerce -->
+                        </div> <!-- ./End col-md-4 mb-2 clearfix d-md-block -->
+
+                        <div class="col-md-4 mb-2 clearfix d-none d-md-block">
+                            <div class="card card-cascade narrower card-ecommerce">
+                                <div class="align-items-center overlay img-produtos container animated bounceIn">
+                                    <a href="produto-page.php">
+                                        <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
+                                            alt="">
+                                    </a>
+                                    <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                    <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                </div> <!-- Card image -->
+                                <div class="card-body card-body-cascade text-center">
+                                    <a href="produto-page.php">
+                                        <p class="card-title my-4 animated bounceIn"><strong>Produto 6</strong></p>
+                                    </a>
+                                    <!-- Card footer -->
+                                    <div class="card-footer px-1">
+                                        <span class="float-left"><del>R$ 0,00</del></span>
+                                        <span class="text-center">R$ 0,00</span>
+                                        <span class="float-right">
+                                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                                data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                                <i class="fas fa-bell"></i></a>
+                                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                                data-placement="top" title="Adicionar aos favoritos"
+                                                data-original-title="Adicionar aos favoritos">
+                                                <i class="fas fa-heart"></i></a>
                                             <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                         </span> <!-- ./End float-right -->
                                     </div> <!-- ./End card-footer px-1 -->
@@ -426,16 +415,18 @@
                         <div class="card-body card-body-cascade text-center">
                             <a href="produto-page.php">
                                 <p class="card-title my-4 animated bounceIn">
-									<strong>Produto 1</strong>
-								</p>
+                                    <strong>Produto 1</strong>
+                                </p>
                             </a>
                             <div class="card-footer px-1">
                                 <span class="float-left"><del>R$ 0,00</del></span>
                                 <span class="text-center">R$ 0,00</span>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                        data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
                                         <i class="fas fa-bell"></i></a>
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                        data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
                                         <i class="fas fa-heart"></i></a>
                                     <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                 </span> <!-- ./End float-right -->
@@ -456,16 +447,18 @@
                         <div class="card-body card-body-cascade text-center">
                             <a href="produto-page.php">
                                 <p class="card-title my-4 animated bounceIn">
-									<strong>Produto 2</strong>
-								</p>
+                                    <strong>Produto 2</strong>
+                                </p>
                             </a>
                             <div class="card-footer px-1">
                                 <span class="float-left"><del>R$ 0,00</del></span>
                                 <span class="text-center">R$ 0,00</span>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                        data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
                                         <i class="fas fa-bell"></i></a>
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                        data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
                                         <i class="fas fa-heart"></i></a>
                                     <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                 </span> <!-- ./End float-right -->
@@ -486,16 +479,18 @@
                         <div class="card-body card-body-cascade text-center">
                             <a href="produto-page.php">
                                 <p class="card-title my-4 animated bounceIn">
-									<strong>Produto 3</strong>
-								</p>
+                                    <strong>Produto 3</strong>
+                                </p>
                             </a>
                             <div class="card-footer px-1">
                                 <span class="float-left"><del>R$ 0,00</del></span>
                                 <span class="text-center">R$ 0,00</span>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
+                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)"
+                                        data-placement="top" title="Receber Notificação" data-original-title="Receber Notificação">
                                         <i class="fas fa-bell"></i></a>
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)"
+                                        data-placement="top" title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
                                         <i class="fas fa-heart"></i></a>
                                     <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
                                 </span> <!-- ./End float-right -->
@@ -505,7 +500,8 @@
                 </div> <!-- ./col-md-4 mb-2 -->
             </div> <!-- ./class="row" -->
         </section><!-- ./End Section -->
-    </main> <!--/Main layout-->
+    </main>
+    <!--/Main layout-->
 
     <!--Footer-->
     <footer class="page-footer text-center text-md-left pt-4">
@@ -520,7 +516,8 @@
                 <button type="button" class="btn btn-floating btn-rounded btn-ins"><i class="fa fa-instagram fa-lg"></i></button>
                 <button type="button" class="btn btn-floating btn-rounded btn-pin"><i class="fa fa-pinterest fa-lg"></i></button>
             </ul>
-        </div><!--/.Social buttons-->
+        </div>
+        <!--/.Social buttons-->
 
         <!--Copyright-->
         <div class="footer-copyright py-3 text-left">
