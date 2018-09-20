@@ -1,6 +1,9 @@
 <?php 
+// $titulo = "PG mercado";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
+
+
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
     <header>
