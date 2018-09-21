@@ -1,4 +1,5 @@
 <?php 
+$titulo = "Login como pessoa física - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
@@ -11,8 +12,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="modal-content">
                               <div class="modal-header">
                                     <h5 class="modal-title red-text" id="logoutModalLabel">Deseja Sair?</h5>
-                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                                                aria-hidden="true">X</span></button>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
                               </div>
                               <div class="modal-body">Se você selecionar "SAIR", irá encerrar a sua sessão.
                                     Deseja mesmo assim?</div>

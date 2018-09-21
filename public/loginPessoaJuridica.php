@@ -1,4 +1,5 @@
-<?php 
+<?php
+$titulo = "Login como pessoa jurídica - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 <body class="hidden-sn elegant-color clearfix animated fadeIn">

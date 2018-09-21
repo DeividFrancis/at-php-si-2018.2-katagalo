@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title><?= (isset($titulo) == true)? $titulo : "katagalo"?></title>
+<title><?= (isset($titulo) == true)? $titulo : "KataGalo"?></title>
 
 <link rel="icon" type="image/png" href="images/icons/favicon.png" />
 
