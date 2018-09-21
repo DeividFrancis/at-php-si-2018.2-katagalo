@@ -1,4 +1,5 @@
-<?php 
+<?php
+$titulo = "Página inicial - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 

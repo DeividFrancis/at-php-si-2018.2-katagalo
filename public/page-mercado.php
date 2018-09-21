@@ -1,5 +1,5 @@
 <?php 
-// $titulo = "PG mercado";
+$titulo = "Página do Mercado - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 

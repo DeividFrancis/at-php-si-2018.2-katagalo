@@ -1,4 +1,5 @@
-<?php 
+<?php
+$titulo = "Lista de produtos favoritos - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
