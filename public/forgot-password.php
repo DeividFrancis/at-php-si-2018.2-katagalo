@@ -1,69 +1,86 @@
 <?php 
-$titulo = "Recuperar senha - KataGalo";
+$titulo = "Login como pessoa física - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
-<body class="hidden-sn aqua-gradient clearfix animated fadeIn">
+<body class="hidden-sn elegant-color clearfix animated fadeIn">
+      <main class="container">
+            <div class="card">
+                  <h6 class="card-header info-color-dark float-left py-3">
+                        <p class="my-2 h5-responsive white-text float-left font-weight-bold">
+                              <a href="index.php">
+                                    <i class="fas fa-arrow-left fa-2x white-text"></i>
+                              </a>
+                        </p>
+                        <p class="my-3 h3-responsive white-text text-center font-weight-bold">Recuperar Senha</p>
+                  </h6>
 
-    <header>
-        <div class="container">
-            <div class="card card-login mx-auto mt-5 animated bounceIn">
-                <div class="card-header text-center h5 red-text font-weight-bold">
-                    <a href="index.php" class="h5 blue-text float-left">
-                        <i class="fa fa-undo" tool></i>&nbsp;Voltar
-                    </a>
-                </div>
-                <div class="card-body">
-                    <div class="text-center mb-4">
-                        <h4 class="red-text font-weight-bold">Você esqueceu sua senha?</h4>
-                        <p class="grey-text">Digite seu email abaixo e siga as instruções que lhe enviaremos no email
-                            para poder redefinir sua senha.</p>
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <div class="form-label-group">
-                                <input type="email" id="inputRecoverEmail" class="form-control" placeholder="Digite seu email"
-                                    required autofocus="autofocus">
-                                <label for="inputRecoverEmail">Digite seu email</label>
+                  <!--Card content-->
+                  <div class="card-body px-lg-5 pt-0">
+
+                        <!-- Form -->
+                        <form class="text-center" action="#" method="POST" style="color: #aaa;">
+                            <div class="my-3 p-j grey-text">
+                                <p>Para recuperar a sua senha, digita abaixo o email que foi cadastrado, quando você fez o cadastro.</p>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-danger btn-rounded btn-md btn-block" url="login.php">Recuperar
-                                Senha</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                              <div class="form-row">
+                                    <div class="col-md-12">
+                                        <!-- CPF -->
+                                        <div class="md-form">
+                                            <input type="email" class="form-control" required id="EmailRecuperarSenhaPessoaFisicaeJuridica" autocomplete="off" autofocus>
+                                            <label for="cpfUsuarioPessoaFisica">Email</label>
+                                        </div>
+                                    </div>
+                              </div>
 
-    <!-- Tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+                              <div class="text-center float-right col-md-7 d-block small mt-2">
+                                    <button class="btn btn-danger btn-block btn-md" id="btnLoginPessoaFisica" type="submit">Entrar&nbsp;&nbsp;
+                                    </button> <!-- ./text-center float-right col-md-6 d-block small mt-2 -->
+                              </div>
+                  </div>
+            </div><!-- ./End Material form register -->
+            </form><!-- Form -->
+      </main>
 
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <main>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+      </main>
 
-    <!-- Outros JS's -->
-    <script type="text/javascript" src="js/ajax.js"></script>
-    <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 
-    <script>
-        // SideNav Initialization
-        $(".button-collapse").sideNav();
-        new WOW().init();
+      <!-- Tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
 
-        // Tooltips Initialization
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+
+      <!-- Outros JS's -->
+      <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
+      <script type="text/javascript" src="js/ajax.js"></script>
+      <script type="text/javascript" src="js/mascaras.js"></script>
+
+      <script>
+            // Material Select Initialization
+            $(document).ready(function () {
+                  $('.mdb-select').material_select();
+            });
+
+            // SideNav Initialization
+            $(".button-collapse").sideNav();
+
+            new WOW().init();
+
+            // Tooltips Initialization
+            $(function () {
+                  $('[data-toggle="tooltip"]').tooltip()
+            })
+      </script>
 </body>
 
 </html>

@@ -10,8 +10,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 		<nav class="navbar navbar-expand navbar-dark bg-cyan hidden-sn d-print-block">
 
 			<!-- Navbar Search -->
-			<form class="search-form form-inline mr-auto ml-auto mr-md-auto my-2 my-md-0" role="search" method="POST"
-			 autocomplete="on">
+			<form class="search-form form-inline mr-auto ml-auto mr-md-auto my-2 my-md-0" role="search" method="POST" autocomplete="on">
 				<div class="input-group waves-dark">
 					<input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-2 my-md-2" id="input-pesq" size="80px"
 					 placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2" style="height: 3.0rem;">

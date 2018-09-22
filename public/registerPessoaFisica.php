@@ -4,30 +4,15 @@ require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
-    <header>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title red-text" id="logoutModalLabel">Deseja Sair?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                    </div>
-                    <div class="modal-body">Se você selecionar "SAIR", irá encerrar a sua sessão. Deseja mesmo assim?</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-cyan btn-md col-md-4" type="button" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-danger btn-md col-md-4" href="login.html">Sair</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <main class="container">
         <div class="card">
             <h6 class="card-header info-color-dark text-center py-3">
-                <strong class="my-2 h4-responsive white-text font-weight-bold">Cadastre-se no KataGalo</strong>
+                <p class="my-3 h5-responsive white-text float-left font-weight-bold">
+                    <a href="index.php">
+                        <i class="fas fa-arrow-left fa-2x white-text"></i>
+                    </a>
+                </p>
+                <p class="my-3 h3-responsive white-text text-center font-weight-bold">CADASTRE-SE NO KATAGALO</p>
             </h6>
 
             <!--Card content-->
