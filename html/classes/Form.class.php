@@ -17,7 +17,7 @@ class Form
 
     public function addRow($row, $fields)
     {  
-        if($this->rows[$row] == null){
+        if((isset($this->rows[$row])) == false){
             $this->rows[$row] = $fields;
         }else{
             $this->rows[$row] = array_push($this->rows[$row], $fields);

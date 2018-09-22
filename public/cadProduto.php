@@ -4,26 +4,6 @@ require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
-    <header>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title red-text" id="logoutModalLabel">Deseja Sair?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                    </div>
-                    <div class="modal-body">Se você selecionar "SAIR", irá encerrar a sua sessão. Deseja mesmo assim?</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-cyan btn-md col-md-4" type="button" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-danger btn-md col-md-4" href="login.html">Sair</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <main class="container">
         <div class="card">
             <h6 class="card-header info-color-dark py-3">

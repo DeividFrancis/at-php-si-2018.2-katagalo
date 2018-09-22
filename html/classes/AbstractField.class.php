@@ -9,7 +9,8 @@ abstract class AbstractField {
     public abstract function getHtml();
     public function addAttr($attr,$value)
     {
-        if($this->attr[$attr] == null){
+        
+        if((isset($this->attr[$attr]))==false){
             $this->attr[$attr] = array($value);
         }else{
             array_push($this->attr[$attr], $value);
@@ -21,7 +22,7 @@ abstract class AbstractField {
     }
 
     public function setId($id){
-        $this->id = $id;
+    $this->id = $id;
     }
 
     public function setType($type){
