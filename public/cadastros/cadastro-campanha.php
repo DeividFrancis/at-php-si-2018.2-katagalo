@@ -1,4 +1,4 @@
-<?php require_once "../header.php"; ?>
+<?php require_once PROJECT_ROOT."/html/_partHTML/head.php"; ?>
 	<main>
 		<div class="container">
 			<div class="card card-register mx-auto mt-5 animated bounceIn">
