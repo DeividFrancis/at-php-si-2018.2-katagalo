@@ -1,5 +1,6 @@
 <?php
 require_once 'AbstractField.class.php';
+
 class Field  extends AbstractField{
     private $name;
     private $label;
@@ -11,7 +12,7 @@ class Field  extends AbstractField{
         $this->addClass('form-control');
     }
     public function getHtml(){
-        $html = "<div class='col'>";
+        $html = "<div class='col-md-6'>";
         $html.=     "<div class='md-form mt-0'>";
         $html.=         "<input ";
         $html.=         isset($this->id)? "id='{$this->id}'": "";

@@ -37,6 +37,5 @@ switch ($action) {
     default:
         echo "Somente as ações 'salvar', 'deletar', 'alterar' são validas";
         break;
-}
-
+    }
     ?>

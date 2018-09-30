@@ -55,7 +55,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 			<!-- ./Start SideNav slide-out button -->
 			<div class="float-left">
-				<a href="#" data-activates="slide-out" class="button-collapse mr-md-3"><i class="fas fa-bars white-text"></i></a>
+				<a href="#" data-activates="slide-out" class="button-collapse mr-md-3"><i class="fas fa-filter fa-lg white-text"></i></a>
 			</div> <!-- ./End fas fa-filter-->
 			<!-- Navbar Search -->
 			<form class="search-form form-inline mr-auto ml-auto mr-md-auto my-2 my-md-0" role="search" method="GET"
@@ -71,8 +71,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 					<a class="nav-link mr-md-3" href="#" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 					 aria-expanded="false"><i class="far fa-user fa-lg"></i></a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
-						<a class="dropdown-item" href="produto-list.php">Lista de Produtos</a>
-						<a class="dropdown-item" href="#">Configurações da Conta</a>
+						<a class="dropdown-item" href="config-conta.php">Configurações da Conta</a>
 						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Sair</a>
 					</div>
 				</li>

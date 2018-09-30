@@ -12,7 +12,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <i class="fas fa-arrow-left fa-2x white-text"></i>
                     </a>
                 </p>
-                <p class="my-2 h5-responsive white-text text-center font-weight-bold">Escolha opção para cadastro</p>
+                <p class="my-3 h5-responsive white-text text-center font-weight-bold">Escolha opção para cadastro</p>
             </h6>
 
             <!--Card content-->

@@ -130,10 +130,9 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
             <div class="navbar-nav ml-auto ml-4 dropdown-backdrop">
                 <li class="nav-item dropdown no-arrow mx-1">
                     <a class="nav-link mr-md-3" href="#" id="accountDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"><i class="far fa-user fa-lg mr-md-3"></i></a>
+                        aria-haspopup="true" aria-expanded="false"><i class="far fa-user fa-lg"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
-                        <a class="dropdown-item" href="produto-list.php">Lista de Produtos</a>
-                        <a class="dropdown-item" href="#">Configurações da Conta</a>
+                        <a class="dropdown-item" href="config-conta.php">Configurações da Conta</a>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Sair</a>
                     </div>
                 </li>
@@ -152,7 +151,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                     <div class="modal-body">Se você selecionar "SAIR", irá encerrar a sua sessão. Deseja mesmo assim?</div>
                     <div class="modal-footer">
                         <button class="btn btn-cyan btn-md col-md-4" type="button" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-danger btn-md col-md-4" href="login.html">Sair</a>
+                        <a class="btn btn-danger btn-md col-md-4" href="index.php">Sair</a>
                     </div>
                 </div>
             </div>
@@ -525,7 +524,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
         <!--Copyright-->
         <div class="footer-copyright py-3 text-left">
             <div class="container-fluid text-center">
-                <p class="white-text">Todo os direitos reservados &copy; <a href="index.html" class="grey-text">KataGalo</a></p>
+                <p class="white-text">Todo os direitos reservados &copy; <a href="index.php" class="grey-text">KataGalo</a></p>
             </div>
         </div>
         <!--/.Copyright-->

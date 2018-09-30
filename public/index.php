@@ -276,8 +276,6 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 		new WOW().init();
 
-
-
 		// Tooltips Initialization
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()

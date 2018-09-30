@@ -1,42 +1,75 @@
-<?php 
-$title = "Cadastro pessoa";
+<?php
+$titulo = "Cadastro de Produtos - KataGalo";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
     <main class="container">
         <div class="card">
-            <h6 class="card-header info-color-dark py-3">
-                <p class="my-2 h5-responsive white-text text-center font-weight-bold">Escolha opção para cadastro</p>
+            <h6 class="card-header info-color-dark text-center py-3">
+                <p class="my-3 h5-responsive white-text float-left font-weight-bold">
+                    <a href="index.php">
+                        <i class="fas fa-arrow-left fa-2x white-text"></i>
+                    </a>
+                </p>
+                <p class="my-3 h3-responsive white-text text-center font-weight-bold">Cadastro de Produtos</p>
             </h6>
 
             <!--Card content-->
-            <div class="card-body">
+            <div class="card-body px-lg-5 pt-0">    
+                <!-- Form -->
+                <form class="text-center" action="#" method="POST" style="color: #aaa;">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <!-- Código de barras -->
+                            <div class="md-form">
+                                <input type="text" id="barcode" minlength="1" maxlength="80" required class="form-control"
+                                    autofocus>
+                                <label for="barcode">Código de barras</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Preço do produto -->
+                            <div class="md-form">
+                                <input type="text" required id="CadProdutoPreco" placeholder="R$ 0,00" class="form-control">
+                                <label for="CadProdutoPreco">Preço</label>
+                            </div> <!-- ./End md-form -->
+                        </div> <!-- ./End col-md-6 -->
+                    </div> <!-- ./End form-row -->
 
-                <?php
-					include PROJECT_ROOT.'/html/classes/Form.class.php';
-					include PROJECT_ROOT.'/html/classes/Field.class.php';
-					include PROJECT_ROOT.'/html/classes/Select.class.php';
-					
-					$form = new Form("Produto");
-					$f1 = new Field("Barcode", "barcode");
-					$f2 = new Field("Descrição", "descricao");
-					$f3 = new Field("Preço (R$)", "preco");
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <!-- ./Descrição -->
+                            <div class="md-form">
+                                <textarea type="text" id="descricao" required class="md-textarea form-control" maxlength="250" length="250" rows="4"></textarea>
+                                <label for="descricao">Descrição</label>
+                            </div> <!-- ./md-form -->
+                        </div> <!-- ./col-md-6 -->
 
-					$f4 = new Select("Categoria", 'procId');
-					$f4->addOption("Categoria 1", 1);
-					$f4->addOption("Categoria 2", 2);
-					$f4->addOption("Categoria 3", 3);
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <div class="input-group mb-3 mt-5 p-2">
+                                    <div class="custom-file">
+                                        <input type="file" required class="custom-file-input" id="inputGroupFile01" onchange="readName()" aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" id="labelInputImg" for="inputGroupFile01">Selecione um arquivo</label>
+                                    </div> <!-- ./End custom-file -->
+                                </div> <!-- ./End input-group mb-3 md-form -->
+                            </div> <!-- ./End md-form -->
+                        </div> <!-- ./End col-md-6 -->
+                    </div> <!-- ./End form-row -->
 
-					$form->addRow(1,array($f1, $f4));
-					$form->addRow(2,array($f2, $f3));
-					$form->addButtom("Salvar", "salvar");
-					
-					echo $form->getHtml();
-					?>
-
-            </div>
+                        <div class="col-md-6 float-right">
+                            <!-- Botão Enviar -->
+                            <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
+                        </div> <!-- ./End col-md-6 -->
+                    </div><!-- ./End Material form register -->
+                </form><!-- Form -->
     </main>
+
+    <main>
+
+    </main>
+
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
@@ -54,7 +87,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
     <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
     <script type="text/javascript" src="js/ajax.js"></script>
     <script type="text/javascript" src="js/mascaras.js"></script>
-
+    <script type="text/javascript" src="js/uploadImg.js"></script>
     <script>
         // Material Select Initialization
         $(document).ready(function () {

@@ -30,8 +30,8 @@ class Form
     }
     private function getButtom()
     {
-        $html = "<div class=\"float-right\">";
-        $html .= "<button class=\"btn btn-success btn-md waves-effect waves-light\" name=\"{$this->btnName}\" id=\"{$this->btnName}\" type=\"submit\" value=\"{$this->btnValue}\">{$this->btnLabel}</button>";
+        $html = "<div class=\"text-center float-right col-md-6 d-block small mt-2\">";
+        $html .= "<button class=\"btn btn-success btn-block btn-md\" name=\"{$this->btnName}\" id=\"{$this->btnName}\" type=\"submit\" value=\"{$this->btnValue}\">{$this->btnLabel}&nbsp;&nbsp;<i class=\"fas fa-check fa-lg\"></i></button>";
         $html .= "</div>";
         return $html;
     }

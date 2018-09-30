@@ -1,5 +1,5 @@
 <?php
-$titulo = "Registro de pessoa fisica";
+$titulo = "Cadastro de pessoa fisica";
 require_once "../config.php";
 require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
