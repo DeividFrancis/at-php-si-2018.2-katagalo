@@ -1,7 +1,7 @@
 <?php
 $titulo = "Página inicial - KataGalo";
 require_once "../config.php";
-require PROJECT_ROOT."/html/_partHTML/head.php" ?>
+require PROJECT_ROOT."/html/_partHTML/head.php"?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 	<!--Double navigation-->
@@ -96,7 +96,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 						<div class="col-md-4 mb-2 clearfix d-none d-md-block">
 							<div class="card card-cascade narrower card-ecommerce">
 								<div class="align-items-center overlay zoom img-produtos container">
-									<a href="pag_mercado.html">
+									<a href="page-mercado.php">
 										<img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
 									</a>
 								</div> <!-- Card image -->
@@ -242,8 +242,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 				<button type="button" class="btn btn-floating btn-rounded btn-ins"><i class="fa fa-instagram fa-lg"></i></button>
 				<button type="button" class="btn btn-floating btn-rounded btn-pin"><i class="fa fa-pinterest fa-lg"></i></button>
 			</ul>
-		</div>
-		<!--/.Social buttons-->
+		</div> <!--/.Social buttons-->
 
 		<!--Copyright-->
 		<div class="footer-copyright py-3 text-left">
@@ -251,36 +250,45 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 				<p class="white-text">Todo os direitos reservados &copy;
 					<a href="index.php" class="grey-text">KataGalo</a></p>
 			</div>
-		</div>
-		<!--/.Copyright-->
+		</div> <!--/.Copyright-->
 
-	</footer>
-	<!--/.End Footer-->
+	</footer><!--/.End Footer-->
 
-	<!-- JQuery -->
+	<!-- // JQuery -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 
-	<!-- Tooltips -->
-	<script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- // Tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- // Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="js/mdb.min.js"></script>
-	<script type="text/javascript" src="js/ajax.js"></script>
+    <!-- // MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 
-	<script>
-		// SideNav Initialization
-		$(".button-collapse").sideNav();
+    <!-- // Outros JS's -->
+    <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/mascaras.js"></script>
+    <script type="text/javascript" src="js/uploadImg.js"></script>
 
-		new WOW().init();
+<script>
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').material_select();
+    });
 
-		// Tooltips Initialization
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
-		})
-	</script>
+    // SideNav Initialization
+    $(".button-collapse").sideNav()
+
+    new WOW().init()
+
+    // Tooltips Initialization
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
 
 </body>
 

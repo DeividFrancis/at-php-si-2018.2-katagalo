@@ -1,7 +1,7 @@
 <?php 
 $titulo = "Login como pessoa física - KataGalo";
 require_once "../config.php";
-require PROJECT_ROOT."/html/_partHTML/head.php" ?>
+require PROJECT_ROOT."/html/_partHTML/head.php"?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
       <main class="container">
@@ -47,40 +47,42 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
       </main>
 
-      <!-- JQuery -->
-      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <!-- // JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 
-      <!-- Tooltips -->
-      <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- // Tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
-      <!-- Bootstrap core JavaScript -->
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- // Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-      <!-- MDB core JavaScript -->
-      <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- // MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 
-      <!-- Outros JS's -->
-      <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
-      <script type="text/javascript" src="js/ajax.js"></script>
-      <script type="text/javascript" src="js/mascaras.js"></script>
+    <!-- // Outros JS's -->
+    <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/mascaras.js"></script>
+    <script type="text/javascript" src="js/uploadImg.js"></script>
 
-      <script>
-            // Material Select Initialization
-            $(document).ready(function () {
-                  $('.mdb-select').material_select();
-            });
+<script>
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').material_select();
+    });
 
-            // SideNav Initialization
-            $(".button-collapse").sideNav();
+    // SideNav Initialization
+    $(".button-collapse").sideNav()
 
-            new WOW().init();
+    new WOW().init()
 
-            // Tooltips Initialization
-            $(function () {
-                  $('[data-toggle="tooltip"]').tooltip()
-            })
-      </script>
+    // Tooltips Initialization
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+
 </body>
 
 </html>

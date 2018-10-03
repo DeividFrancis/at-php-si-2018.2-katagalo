@@ -1,9 +1,3 @@
-<?php
-$titulo = "Configuração da conta - KataGalo";
-require_once "../config.php";
-require PROJECT_ROOT."/html/_partHTML/head.php" ?>
-
-<body class="hidden-sn cyan-skin clearfix animated fadeIn">
     	<header>
 		<!-- Sidebar navigation -->
 		<div id="slide-out" class="side-nav sn-bg-4 mdb-sidenav">
@@ -12,8 +6,9 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 				<!-- Logo -->
 				<li class="logo-sm d-block waves-effect">
 					<div class="text-center" id="logo">
-						<a href="index.php"><img src="images/logo/kata-galo-logo.svg" class="animated pulse infinite img-fluid"></a>
-						<div class="mask waves-effect waves-dark rgba-white-slight"></div>
+						<a href="index.php">
+							<img src="images/logo/kata-galo-logo.svg" class="animated pulse infinite img-fluid"></a>
+							<div class="mask waves-effect waves-dark rgba-white-slight"></div>
 					</div>
 				</li>
 				<!--/. Logo -->
@@ -59,8 +54,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 				</li>
 			</ul>
 			<div class="sidenav-bg mask-strong"></div>
-		</div>
-		<!--/.End side-nav sn-bg-4 hidden -->
+		</div> <!--/.End side-nav sn-bg-4 hidden -->
 
 		<!-- ./Start Navbar -->
 		<nav class="navbar navbar-expand navbar-dark bg-cyan hidden-sn d-print-block">
@@ -84,7 +78,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 					<a class="nav-link mr-md-3" href="#" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 					 aria-expanded="false"><i class="far fa-user fa-lg"></i></a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
-						<a class="dropdown-item" href="config-conta.php">Configurações da Conta</a>
+						<a class="dropdown-item" href="configContaPessoaFisica.php">Configurações da Conta</a>
 						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Sair</a>
 					</div>
 				</li>
@@ -107,50 +101,3 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
 			</div>
 		</div>
 	</header>
-    <main class="container">
-        <section>
-
-        </section>
-    </main>
-
-    <main>
-
-    </main>
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-
-    <!-- Tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <!-- Outros JS's -->
-    <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
-    <script type="text/javascript" src="js/ajax.js"></script>
-    <script type="text/javascript" src="js/mascaras.js"></script>
-    <script type="text/javascript" src="js/uploadImg.js"></script>
-    <script>
-        // Material Select Initialization
-        $(document).ready(function () {
-            $('.mdb-select').material_select();
-        });
-
-        // SideNav Initialization
-        $(".button-collapse").sideNav();
-
-        new WOW().init();
-
-        // Tooltips Initialization
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-</body>
-
-</html>

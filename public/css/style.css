@@ -33,6 +33,16 @@
   min-height: 200px;
 }
 
+.logo-perfil{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  max-height: 300px;
+  min-height: 200px;
+  max-width: 250px;
+  min-width: 100%;
+  cursor: pointer;
+}
+
 /*-------------------------------------*/
 /*----------- ID DOS BOTÕES -----------*/
 /*-------------------------------------*/
