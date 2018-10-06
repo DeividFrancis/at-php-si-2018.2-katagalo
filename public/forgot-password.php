@@ -28,14 +28,14 @@ require PROJECT_ROOT."/html/_partHTML/head.php"?>
                                     <div class="col-md-12">
                                         <!-- CPF -->
                                         <div class="md-form">
-                                            <input type="email" class="form-control" required id="EmailRecuperarSenhaPessoaFisicaeJuridica" autocomplete="off" autofocus>
-                                            <label for="cpfUsuarioPessoaFisica">Email</label>
+                                            <input type="email" class="form-control" required id="emailRecuperarSenha" name="recuperarSenha" autocomplete="off" autofocus>
+                                            <label for="emailRecuperarSenha">Email</label>
                                         </div>
                                     </div>
                               </div>
 
                               <div class="text-center float-right col-md-7 d-block small mt-2">
-                                    <button class="btn btn-danger btn-block btn-md" id="btnLoginPessoaFisica" type="submit">Entrar&nbsp;&nbsp;
+                                    <button class="btn btn-danger btn-block btn-md" id="btnRecuperarSenha" type="submit">Entrar&nbsp;&nbsp;
                                     </button> <!-- ./text-center float-right col-md-6 d-block small mt-2 -->
                               </div>
                   </div>

@@ -12,13 +12,16 @@ require PROJECT_ROOT."/html/_partHTML/head.php"?>
 			<!-- Navbar Search -->
 			<form class="search-form form-inline mr-auto ml-auto mr-md-auto my-2 my-md-0" role="search" method="POST" autocomplete="on">
 				<div class="input-group waves-dark">
-					<input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-2 my-md-2" id="input-pesq" size="80px"
-					 placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2" style="height: 3.0rem;">
+					<input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-2 my-md-2" id="input-pesq" size="80px" placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2" style="height: 3.0rem;">
 				</div>
 			</form>
 
+            <div class="navbar-nav d-md-block ml-2">
+                <a class="btn danger-color-dark white-text btn-md my-0" href="registerEmpresa.php">Cadastrar sua empresa</a>
+            </div>
+
 			<div class="navbar-nav d-md-block ml-2">
-				<a class="btn btn-success btn-md my-0" href="cadTipoPessoa.php">Entrar</a>
+				<a class="btn btn-success btn-md my-0" href="login.php">Entrar</a>
 			</div>
 
 		</nav>

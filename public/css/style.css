@@ -61,6 +61,14 @@
   height: 20%;
 }
 
+#btnRecuperarSenha{
+  text-decoration-color: #2196f3;
+}
+#btnRecuperarSenha:hover{
+  color: #2196f3;
+  text-decoration: underline #2196f3;
+}
+
 /*-------------------------------------*/
 /*----------- ID DO LOGO -----------*/
 /*-------------------------------------*/

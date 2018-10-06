@@ -24,7 +24,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="col-md-6">
                             <!-- Pessoa Física -->
                             <div class="md-form">
-                                <a href="registerPessoaFisica.php">
+                                <a href="register.php">
                                     <button type="button" class="btn btn-success btn-md btn-block">Pessoa Fisíca</button>
                                 </a>
                             </div>
@@ -32,7 +32,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="col-md-6">
                             <!-- Pessoa Juridíca -->
                             <div class="md-form">
-                                <a href="registerPessoaJuridica.php">
+                                <a href="registerEmpresa.php">
                                     <button type="button" class="btn btn-blue btn-md btn-block">Pessoa Juridíca</button>
                                 </a>
                             </div>

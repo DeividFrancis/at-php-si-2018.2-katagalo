@@ -23,15 +23,15 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="col-md-6">
                             <!-- Código de barras -->
                             <div class="md-form">
-                                <input type="text" id="barcode" minlength="1" maxlength="80" required class="form-control"
+                                <input type="text" id="cadProdutoBarcode" name="barcode" minlength="1" maxlength="80" required class="form-control"
                                     autofocus>
-                                <label for="barcode">Código de barras</label>
+                                <label for="cadProdutoBarcode">Código de barras</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <!-- Preço do produto -->
                             <div class="md-form">
-                                <input type="text" required id="CadProdutoPreco" placeholder="R$ 0,00" class="form-control">
+                                <input type="text" required id="CadProdutoPreco" name="preco" placeholder="R$ 0,00" class="form-control">
                                 <label for="CadProdutoPreco">Preço</label>
                             </div> <!-- ./End md-form -->
                         </div> <!-- ./End col-md-6 -->
@@ -41,7 +41,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="col-md-6">
                             <!-- ./Descrição -->
                             <div class="md-form">
-                                <textarea type="text" id="descricao" required class="md-textarea form-control" maxlength="250" length="250" rows="4"></textarea>
+                                <textarea type="text" id="descricao" required name="descricao" class="md-textarea form-control" maxlength="250" length="250" rows="4"></textarea>
                                 <label for="descricao">Descrição</label>
                             </div> <!-- ./md-form -->
                         </div> <!-- ./col-md-6 -->
@@ -50,7 +50,7 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                             <div class="md-form">
                                 <div class="input-group mb-3 mt-5 p-2">
                                     <div class="custom-file">
-                                        <input type="file" required class="custom-file-input" id="inputGroupFile01" onchange="readName()" aria-describedby="inputGroupFileAddon01">
+                                        <input type="file" required class="custom-file-input" name="uploadImage" id="inputGroupFile01" onchange="readName()" aria-describedby="inputGroupFileAddon01">
                                         <label class="custom-file-label" id="labelInputImg" for="inputGroupFile01">Selecione um arquivo</label>
                                     </div> <!-- ./End custom-file -->
                                 </div> <!-- ./End input-group mb-3 md-form -->
@@ -63,7 +63,8 @@ require PROJECT_ROOT."/html/_partHTML/head.php" ?>
                             <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
                         </div> <!-- ./End col-md-6 -->
                     </div><!-- ./End Material form register -->
-                </form><!-- Form -->
+                </div>
+            </form><!-- Form -->
     </main>
 
     <main>
