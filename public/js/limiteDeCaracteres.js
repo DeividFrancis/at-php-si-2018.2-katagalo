@@ -20,8 +20,8 @@ function limite(e) {
     }; if ((ev != 0) && (ev != 8) && (ev != 13))
         if (!RegExp(/[0-9]/gi).test(String.fromCharCode(ev)))
             return false;
-    if (element.value + String.fromCharCode(ev) > 100) return false;
+    if (element.value + String.fromCharCode(ev) > 9999) return false;
 }
 window.onload = function () {
-    document.getElementById('input-qtd').onkeypress = limite;
+    document.getElementById('pesNumero').onkeypress = limite;
 }

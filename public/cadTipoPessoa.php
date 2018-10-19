@@ -1,7 +1,7 @@
 <?php 
 $titulo = "Tipo de Cadastro - KataGalo";
 require_once "../config.php";
-require PROJECT_ROOT."/html/_partHTML/head.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
     <main class="container">

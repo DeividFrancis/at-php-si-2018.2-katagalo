@@ -21,10 +21,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- Font Awesome -->
-<link rel=  "stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/v4-shims.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js"></script>
 
 <!-- Material Design Bootstrap -->
 <link href="css/animate.css" rel="stylesheet">
@@ -33,4 +31,8 @@
 <link href="css/mdb.min.css" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
+
+<!-- Google Fonts    -->
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
 </head>

@@ -9,8 +9,7 @@
                         <a href="index.php" class="pl-0"><img src="images/logo/kata-galo-logo.svg" class="animated pulse infinite img-fluid"></a>
                         <div class="mask waves-effect waves-light rgba-white-slight"></div>
                     </div>
-                </li>
-                <!--/. Logo -->
+                </li> <!--/. Logo -->
 
                 <hr>
 
@@ -97,24 +96,21 @@
                 </li>
             </ul>
             <div class="sidenav-bg mask-strong"></div>
-        </div>
-        <!--/.End side-nav sn-bg-4 hidden -->
+        </div> <!--/.End side-nav sn-bg-4 hidden -->
 
         <!-- ./Start Navbar -->
         <nav class="navbar navbar-expand navbar-dark bg-cyan static-top hidden-sn">
 
             <!-- ./Start SideNav slide-out button -->
             <div class="float-left">
-                <a href="#" data-activates="slide-out" class="button-collapse mr-md-3"><i class="fas fa-bars white-text"></i></a>
+                <a href="#" data-activates="slide-out" class="button-collapse mr-md-3" data-toggle="tooltip" data-placement="left" title="Menu"><i class="fas fa-bars white-text"></i></a>
             </div> <!-- ./End fas fa-bars-->
 
             <!-- Navbar Search -->
             <form class="search-form form-inline mr-auto ml-auto mr-md-5 my-2 my-md-0" role="search" method="POST"
                 autocomplete="on">
                 <div class="input-group waves-dark">
-                    <input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-2 my-md-2" id="input-pesq"
-                        size="80px" placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2"
-                        style="height: 3.0rem;">
+                    <input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-4 my-md-2" id="input-pesq" size="80px" placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2" style="height: 3.5rem;">
                 </div>
             </form>
 
@@ -124,7 +120,7 @@
                     <a class="nav-link mr-md-3" href="#" id="accountDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false"><i class="far fa-user fa-lg"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
-                        <a class="dropdown-item" href="configContaPessoaFisica.php">Configurações da Conta</a>
+                        <a class="dropdown-item" href="configContaUsuario.php">Configurações da Conta</a>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Sair</a>
                     </div>
                 </li>

@@ -4,125 +4,120 @@ require_once "../config.php";
 include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
-    <main class="container">
-        <div class="card">
-            <h6 class="card-header info-color-dark text-center py-3">
-                <p class="my-3 h5-responsive white-text float-left font-weight-bold">
-                    <a href="index.php">
-                        <i class="fas fa-arrow-left fa-2x white-text"></i>
-                    </a>
-                </p>
-                <p class="my-3 h3-responsive white-text text-center font-weight-bold">CADASTRE-SE NO KATAGALO</p>
-            </h6>
+<main class="container">
+    <div class="card">
+        <h6 class="card-header info-color-dark text-center py-3">
+            <p class="my-3 h5-responsive white-text float-left font-weight-bold" data-toggle="tooltip" data-placement="left" title="Voltar para área de login">
+                <a href="login.php">
+                    <i class="fas fa-arrow-left fa-2x white-text"></i>
+                </a>
+            </p>
+            <p class="my-3 h3-responsive white-text text-center font-weight-bold">CADASTRE-SE NO KATAGALO</p>
+        </h6>
 
-            <!--Card content-->
-            <div class="card-body px-lg-5 pt-0">
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
 
-                <div class="my-2 p-j">
-                    <p>Apenas para cadastro de Pessoa Física.</p>
+            <div class="my-2 p-j">
+                <p>Apenas para cadastro de Pessoa Física.</p>
+            </div>
+
+            <!-- Form -->
+            <form  class="text-center needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="Nome Completo" maxlength="250" length="250" id="nomeCompleto" required name="pes_nome" class="form-control">
+                            <div class="invalid-feedback">Você não preencheu o nome completo</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="email" placeholder="Email" maxlength="250" length="250" required id="pesEmailLogin" name="pes_login" class="form-control">
+                            <div class="invalid-feedback">Você não preencheu o email</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                </div> <!-- ./End form-row -->
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="CPF/CNPJ" class="form-control" id="cpfcnpj" required name="pes_receita" autocomplete="on" onblur="validaCPF()">
+                            <div class="invalid-feedback">Você não preencheu o CPF/CNPJ</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="CEP" class="form-control" maxlength="8" length="8" id="pesCep" required name="end_cep" autocomplete="on">
+                            <div class="invalid-feedback">Digite o CEP</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                </div> <!-- ./End form-row -->
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="Endereço" maxlength="250" length="250" class="form-control" id="pesEndereco" required name="end_endereco" autocomplete="on">
+                            <div class="invalid-feedback">Digite seu endereço</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="Cidade" maxlength="250" length="250" class="form-control" id="pesCidade" required name="cid_cidade" autocomplete="on">
+                            <div class="invalid-feedback">Digite sua cidade</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                </div> <!-- ./End form-row -->
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="Estado" min="2" maxlength="2" length="2" class="form-control" id="pesEstado" required name="est_sigla" autocomplete="on">
+                            <div class="invalid-feedback">Digite seu estado</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" length="250" required name="end_bairro" autocomplete="on">
+                            <div class="invalid-feedback">Digite seu bairro</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                </div> <!-- ./End form-row -->
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senhaUsuario" name="pes_senha" class="form-control">
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="senhaUsuario2" name="pes_senha" onblur="verificaSenha()" class="form-control">
+                            <div class="invalid-feedback">Os campos de senhas devem ser preenchidos</div>
+                        </div> <!-- ./End md-form -->
+                    </div> <!-- ./End col-md-6 -->
+                </div> <!-- ./End form-row -->
+
+                <div class="text-center float-left col-md-6 d-block small mt-2">
+                    <button class="btn btn-success btn-block btn-md" id="btnRegistrarPessoaFisica" type="submit">Registar&nbsp;&nbsp;
+                        <i class="fas fa-sign-in-alt"></i></button>
                 </div>
 
-                <!-- Form -->
-                <form  class="text-center" action="#" method="POST" style="color: #aaa;">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <!-- Primeiro Nome -->
-                            <div class="md-form">
-                                <input type="text" id="nomeCompleto" required name="nome" class="form-control" autofocus>
-                                <label for="primeiroNomeUsuarioPessoaFisica">Nome Completo</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <!-- Email -->
-                            <div class="md-form">
-                                <input type="email" required id="emailUsuarioPessoaFisica" class="form-control">
-                                <label for="emailUsuarioPessoaFisica">Email</label>
-                            </div> <!-- ./End md-form -->
-                        </div> <!-- ./End col-md-6 -->
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <!-- CPF -->
-                            <div class="md-form">
-                                <input type="text" class="form-control" placeholder="000.000.000-00" id="cpfUsuarioPessoaFisica" maxlength="14" autocomplete="off">
-                                <label for="cpfUsuarioPessoaFisica">CPF</label>
-                            </div> <!-- ./End md-form -->
-                        </div> <!-- ./End col-md-6 -->
-
-                        <div class="col-md-6">
-                            <!-- Senha -->
-                            <div class="md-form">
-                                <input type="password" minlength="6" maxlength="8" required id="senhaUsuarioPessoaFisica" class="form-control" data-toggle="tooltip" data-placement="top" title="Digitar senha com no mínimo 6 caracteres de 'a-z', '0-9', e com máximo 15 caracteres">
-                                <label for="senhaUsuarioPessoaFisica">Senha</label>
-                            </div> <!-- ./End md-form -->
-                        </div> <!-- ./End col-md-6 -->
-
-                        <div class="col-md-6">
-                            <!-- Repetir Senha -->
-                            <div class="md-form">
-                                <input type="password" minlength="6" maxlength="8" required id="repetirSenhaUsuarioPessoaFisica"
-                                    class="form-control">
-                                <label for="repetirSenhaUsuarioPessoaFisica">Repetir Senha</label>
-                            </div> <!-- ./End md-form -->
-                        </div> <!-- ./End col-md-6 -->
-                    </div> <!-- ./End form-row -->
-
-                    <div class="text-center float-left col-md-6 d-block small mt-2">
-                        <button class="btn btn-success btn-block btn-md" id="btnRegistrarPessoaFisica" type="submit">Registar&nbsp;&nbsp;
-                            <i class="fas fa-sign-in-alt"></i></button>
-                    </div>
-
-                    <div class="text-center float-right col-md-6 d-block small mt-2">
-                        <a class="btn btn-info btn-block btn-md" id="btnLoginPessoaFisica" href="login.php">Já
-                            possui conta?</a>
-                    </div>
+                <div class="text-center float-right col-md-6 d-block small mt-2">
+                    <a class="btn btn-info btn-block btn-md" id="btnLoginPessoaFisica" href="login.php">Já possui conta?</a>
                 </div>
-            </div><!-- ./End Material form register -->
-        </form><!-- Form -->
-    </main>
+        </div>
+    </div><!-- ./End Material form register -->
+    </form><!-- Form -->
+</main>
 
-    <main>
+<main>
 
-    </main>
+</main>
 
-    	<!-- // JQuery -->
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-
-    <!-- // Tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-
-    <!-- // Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- // MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <!-- // Outros JS's -->
-    <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
-    <script type="text/javascript" src="js/ajax.js"></script>
-    <script type="text/javascript" src="js/mascaras.js"></script>
-    <script type="text/javascript" src="js/uploadImg.js"></script>
-
-<script>
-    // Material Select Initialization
-    $(document).ready(function () {
-        $('.mdb-select').material_select();
-    });
-
-    // SideNav Initialization
-    $(".button-collapse").sideNav()
-
-    new WOW().init()
-
-    // Tooltips Initialization
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    })
-</script>
-
+<?php
+include PROJECT_ROOT."/html/_partHTML/footer2.php"
+?>
 </body>
 
 </html>

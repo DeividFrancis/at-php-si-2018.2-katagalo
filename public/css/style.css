@@ -8,39 +8,39 @@
 
 @viewport {width: device-width;}
 
-
 /*-----------------------------------------------*/
 /*------------------- IMAGENS ------------------ */
 /*-----------------------------------------------*/
 
-.img-background{
-	padding: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	color: #000;
-  background: url(../images/images-background/keyboard-ecommerce.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 100%;
-}
+/*.img-background{*/
+/*padding: 0;*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*color: #000;*/
+/*background: url(../images/images-background/keyboard-ecommerce.jpg);*/
+/*background-attachment: fixed;*/
+/*background-size: cover;*/
+/*background-position: 100%;*/
+/*}*/
 
 .img-produtos{
-  margin-top: 6%;
-  max-height: 250px;
-  max-width: 250px;
-  min-width: 200px;
-  min-height: 200px;
+    margin-top: 6%;
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .logo-perfil{
-  margin-top: 10%;
-  margin-bottom: 5%;
-  max-height: 300px;
-  min-height: 200px;
-  max-width: 250px;
-  min-width: 100%;
-  cursor: pointer;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    max-width: 250px;
+    max-height: 250px;
+    width: 230px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
 }
 
 /*-------------------------------------*/
@@ -48,42 +48,42 @@
 /*-------------------------------------*/
 
 #btn_entrar{
-  text-transform: uppercase;
-  text-align-last: center;
-  font-size: 11pt;
-  height: 20%;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-size: 11pt;
+    height: 20%;
 }
 
 #btn_registrar{
-  text-transform: uppercase;
-  text-align-last: center;
-  font-size: 11pt;
-  height: 20%;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-size: 11pt;
+    height: 20%;
 }
 
 #btnRecuperarSenha{
-  text-decoration-color: #2196f3;
+    text-decoration-color: #2196f3;
 }
+
 #btnRecuperarSenha:hover{
-  color: #2196f3;
-  text-decoration: underline #2196f3;
+    color: #2196f3;
+    text-decoration: underline #2196f3;
 }
 
 /*-------------------------------------*/
-/*----------- ID DO LOGO -----------*/
+/*----------- LOGO KATAGALO -----------*/
 /*-------------------------------------*/
 
 #logo {
-	height: 50px;
-  width: 125px;
-  max-height: 50px;
-  max-width: 125px;
-  min-height: 50px;
-  min-width: 125px;
-	margin-left: 20%;
-	margin-top: 10px;
-  margin-bottom: 80px;
-  border-radius: 100%;
+    height: 50px;
+    width: 125px;
+    max-height: 50px;
+    max-width: 125px;
+    min-height: 50px;
+    min-width: 125px;
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 80px;
 }
 
 /*-------------------------------------*/
@@ -91,7 +91,7 @@
 /*-------------------------------------*/
 
 body html{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a,
@@ -114,90 +114,90 @@ h6 {
 }
 
 span{
-  font-size: 19pt;
-  color: rgb(255, 0, 0);
-  font-weight: 900;
+    font-size: 19pt;
+    color: rgb(255, 0, 0);
+    font-weight: 900;
 }
 
 del{
-  font-size: 13px;
+    font-size: 13px;
 }
 
 
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-  list-style: none;
-  text-align: justify;
+    list-style: none;
+    text-align: justify;
 }
 
 strong{
-text-transform: uppercase;
-color: #000000;
-font-weight: bold;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .p-j{
-  color: #000000;
-  text-align: justify;
+    color: #000000;
+    text-align: justify;
 }
 
 .p-b{
-  color: #000000;
-  font-weight: bold;
+    color: #000000;
+    font-weight: bold;
 }
 
 .p-i{
-  color: #000000;
-  font-style: italic;
+    color: #000000;
+    font-style: italic;
 }
 
 .input-qtd{
-  border: 1px solid #00bcd4;
+    border: 1px solid #00bcd4;
 }
 
 .input-qtd:hover,
 .input-qtd:focus{
-  color: #000;
-  font-weight: 900;
-  border: 2px solid #00bcd4;
+    color: #000;
+    font-weight: 900;
+    border: 2px solid #00bcd4;
 }
 
 .borda-preco-fav{
-  background-color: transparent;
-  border-radius: 30px;
-  border: 3px solid #aaaaaa;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 3px solid #aaaaaa;
 }
 
 #alertaId{
-  color: #aaaaaa;
+    color: #aaaaaa;
 }
 
 #alertaId:hover{
-  color: #ffa600;
+    color: #ffa600;
 }
 
 #favoritoId{
-  color: #aaaaaa;
+    color: #aaaaaa;
 }
 
 #favoritoId:hover{
-  color: #ff0000;
+    color: #ff0000;
 }
 
 #slide-out{
-  height: 100%;
-  max-height: 100%;
-  min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
 }
 
-/*--------------------------------------------*/
-/*                Gradient                    */
-/*--------------------------------------------*/
+    /*--------------------------------------------*/
+    /*                Gradient                    */
+    /*--------------------------------------------*/
 
 .juicy-peach-gradient {background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);}
 .young-passion-gradient {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);}
@@ -222,25 +222,25 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 .near-moon-gradient {background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);}
 
 /*---------------------------------------*/
-/*-------------- SCROLBAR ---------------*/
+/*-------------- SCROLLBAR ---------------*/
 /*---------------------------------------*/
 
 .scrollbar{
-  height: 100%;
-  max-height: 100%;
-  min-height: 100%;
-  width: auto;
-  overflow-y: auto;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    width: auto;
+    overflow-y: auto;
 }
 
 .scrollbar-cyan::-webkit-scrollbar {
-  height: 100%;
-  width: 4%;
-  background-color: #fff; 
+    height: 100%;
+    width: 4%;
+    background-color: #fff;
 }
 
 .scrollbar-cyan::-webkit-scrollbar-thumb {
-  border-radius: 15px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #00bcd4; 
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #00bcd4;
 }
