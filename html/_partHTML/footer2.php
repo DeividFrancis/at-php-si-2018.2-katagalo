@@ -1,21 +1,18 @@
-<!--Footer-->
-<footer class="page-footer text-center text-md-left pt-4">
-
-    <!--Copyright-->
+<footer class="page-footer text-center my-5 text-md-left pt-4">
     <div class="footer-copyright py-3 text-left">
         <div class="container-fluid text-center">
-            <p class="white-text">Todo os direitos reservados &copy; <a href="index.php" class="grey-text">KataGalo</a></p>
+            <p class="white-text">Todo os direitos reservados &copy;
+                <a href="index.php" class="grey-text">KataGalo</a>
+            </p>
         </div>
     </div>
-    <!--/.Copyright-->
 
 </footer>
-<!--/.End Footer-->
 
 <!-- // JQuery -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.12.1.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 <!-- // Tooltips -->
 <script type="text/javascript" src="js/popper.min.js"></script>
@@ -33,6 +30,7 @@
 <script type="text/javascript" src="js/uploadImg.js"></script>
 <script type="text/javascript" src="js/submit.js"></script>
 <script type="text/javascript" src="js/viaCep.js"></script>
+<!--<script type="text/javascript" src="js/validaCpf.js"></script>-->
 
 <script>
     // Material Select Initialization
@@ -41,9 +39,9 @@
     });
 
     // SideNav Initialization
-    $(".button-collapse").sideNav()
+    $(".button-collapse").sideNav();
 
-    new WOW().init()
+    new WOW().init();
 
     // Tooltips Initialization
     $(function () {

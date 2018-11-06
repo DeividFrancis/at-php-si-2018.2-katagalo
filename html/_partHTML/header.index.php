@@ -14,18 +14,17 @@
             <hr>
 
             <li>
-                <!-- Side navigation links -->
-            <li class="btn success-color d-block">
-                <a href="login.php" name="btnIndexLogin" class="btn-sm white-text font-weight-bold">Fazer Login</a>
-            </li>
+                <li class="btn success-color d-block">
+                    <a href="login.php" name="btnIndexLogin" class="btn-sm white-text font-weight-bold">Entrar</a>
+                </li>
 
-            <hr>
+                <hr>
 
-            <li class="btn btn-unique d-block">
-                <a href="registerEmpresa.php" name="btnIndexCadEmpresa" class="btn-sm white-text font-weight-bold">Cadastre sua empresa</a>
-            </li>
+                <li class="btn btn-unique d-block">
+                    <a href="registerEmpresa.php" name="btnIndexCadEmpresa" class="btn-sm white-text font-weight-bold">Cadastre sua empresa</a>
+                </li>
 
-            <hr>
+                <hr>
             </li>
         </ul>
         <div class="sidenav-bg mask-strong"></div>
@@ -37,7 +36,7 @@
 
         <!-- ./Start SideNav slide-out button -->
         <div class="float-right">
-            <a href="#" data-activates="slide-out" class="button-collapse mr-md-3" data-toggle="tooltip" data-placement="bottom" title="Clique aqui"><i class="fas fa-bars white-text"></i></a>
+            <a href="#" data-activates="slide-out" class="button-collapse mr-md-3"><i class="fas fa-bars white-text"></i></a>
         </div> <!-- ./End fas fa-bars-->
 
         <!-- Navbar Search -->

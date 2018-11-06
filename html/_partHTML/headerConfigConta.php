@@ -51,7 +51,8 @@
 
         <!-- ./Start SideNav slide-out button -->
         <div class="float-left">
-            <a href="#" data-activates="slide-out" class="button-collapse mr-md-3"><i class="fas fa-bars white-text"></i></a>
+            <a href="#" data-activates="slide-out" class="button-collapse mr-md-3"><i class="fas fa-bars white-text"></i>
+            </a>
         </div> <!-- ./End fas fa-bars-->
 
         <!-- Navbar Search -->
@@ -67,7 +68,7 @@
                 <a class="nav-link mr-md-3" href="#" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false"><i class="far fa-user fa-lg"></i></a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
-                    <a class="dropdown-item" href="configContaUsuario.php">Configurações da Conta</a>
+                    <a class="dropdown-item" href="configContaUsuario.php">Perfil</a>
                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Sair</a>
                 </div>
             </li>
@@ -76,10 +77,12 @@
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content modal-lg">
                 <div class="modal-header">
                     <h5 class="modal-title red-text" id="logoutModalLabel">Deseja Sair?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="black-text font-weight-bold">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">Se você selecionar "SAIR", irá encerrar a sua sessão. Deseja mesmo assim?</div>
                 <div class="modal-footer">

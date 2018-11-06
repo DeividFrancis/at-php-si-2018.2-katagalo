@@ -4,12 +4,24 @@
     <!--Social buttons-->
     <div class="social-section text-center">
         <ul class="list-unstyled list-inline">
-            <button type="button" class="btn btn-floating btn-rounded btn-fb"><i class="fab fa-facebook-f fa-lg"></i></button>
-            <button type="button" class="btn btn-floating btn-rounded btn-tw"><i class="fa fa-twitter fa-lg"></i></button>
-            <button type="button" class="btn btn-floating btn-rounded btn-gplus"><i class="fa fa-google-plus fa-lg"></i></button>
-            <button type="button" class="btn btn-floating btn-rounded btn-li"><i class="fa fa-linkedin fa-lg"></i></button>
-            <button type="button" class="btn btn-floating btn-rounded btn-ins"><i class="fa fa-instagram fa-lg"></i></button>
-            <button type="button" class="btn btn-floating btn-rounded btn-pin"><i class="fa fa-pinterest fa-lg"></i></button>
+            <button type="button" class="btn btn-floating btn-rounded btn-fb" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fab fa-facebook-f fa-lg"></i>
+            </button>
+            <button type="button" class="btn btn-floating btn-rounded btn-tw" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fab fa-twitter fa-lg"></i>
+            </button>
+            <button type="button" class="btn btn-floating btn-rounded btn-gplus" data-toggle="tooltip" data-placement="top" title="Google+">
+                <i class="fab fa-google-plus-g fa-lg"></i>
+            </button>
+            <button type="button" class="btn btn-floating btn-rounded btn-li" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                <i class="fab fa-linkedin-in fa-lg"></i>
+            </button>
+            <button type="button" class="btn btn-floating btn-rounded btn-ins" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <i class="fab fa-instagram fa-lg"></i>
+            </button>
+            <button type="button" class="btn btn-floating btn-rounded btn-pin" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                <i class="fab fa-pinterest-p fa-lg"></i>
+            </button>
         </ul>
     </div>
     <!--/.Social buttons-->
@@ -27,8 +39,8 @@
 
 <!-- // JQuery -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-ui-1.12.1.js"></script>-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 <!-- // Tooltips -->
 <script type="text/javascript" src="js/popper.min.js"></script>
