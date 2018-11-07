@@ -1,7 +1,7 @@
 <?php
 $titulo = "Cadastro de Produtos - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix animated fadeIn">
 <main class="container">
@@ -71,9 +71,9 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                 <div class="col-md-7 float-right">
                     <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
                 </div> <!-- ./End col-md-6 -->
+            </form><!-- Form -->
         </div><!-- ./End Material form register -->
     </div>
-    </form><!-- Form -->
 </main>
 
 <main>
@@ -81,7 +81,7 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer2.php"
+include PROJECT_ROOT."/html/_partHTML/footer2.php"
 ?>
 
 </body>

@@ -11,6 +11,14 @@ function addImageUser() {
     $('#user-add-input').click();
 }
 
+function addImageEmpresa() {
+    $('#empresa-add-input').click();
+}
+
+function addImageProduto() {
+    $('#produto-add-input').click();
+}
+
 function readURL(input, idCampo) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();

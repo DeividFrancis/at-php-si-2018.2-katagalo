@@ -1,8 +1,8 @@
 <?php
 $titulo = "Página inicial - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php";
-include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php";
+include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
 
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
@@ -51,7 +51,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 1</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                                class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -67,7 +68,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 2</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                                class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -83,7 +85,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 3</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                                class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -102,7 +105,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 4</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                                class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -118,7 +122,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 5</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                                class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -134,7 +139,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 6</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                                class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -160,7 +166,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                     <div class="card-body card-body-cascade text-center">
                         <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 1</strong></a>
                         <span class="float-right">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                        class="fas fa-heart"></i></a>
                         </span>
                     </div> <!-- ./End card-body card-body-cascade text-center -->
                 </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -176,7 +183,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                     <div class="card-body card-body-cascade text-center">
                         <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 2</strong></a>
                         <span class="float-right">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                        class="fas fa-heart"></i></a>
                         </span>
                     </div> <!-- ./End card-body card-body-cascade text-center -->
                 </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -192,7 +200,8 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
                     <div class="card-body card-body-cascade text-center">
                         <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 3</strong></a>
                         <span class="float-right">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i class="fas fa-heart"></i></a>
+                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
+                                        class="fas fa-heart"></i></a>
                         </span>
                     </div> <!-- ./End card-body card-body-cascade text-center -->
                 </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -206,7 +215,7 @@ include PROJECT_ROOT . "/html/_partHTML/header.index.php" ?>
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer.php" ?>
+include PROJECT_ROOT."/html/_partHTML/footer.php" ?>
 
 </body>
 

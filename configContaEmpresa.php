@@ -1,8 +1,8 @@
 <?php
 $titulo = "Configurações da conta - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php";
-include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php";
+include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
@@ -10,22 +10,29 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
         <div class="container">
             <div class="form-row">
                 <!-- ./Start foto do perfil -->
-                <div class="col-md-4 mb-5">
-                    <div class="card card-profile container">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-profile container mb-3">
                         <div class="card-avatar">
                             <div class="zoom">
-                                <input type="file" required id="user-add-input" onchange="readURL(this, 'user-add');" name="foto" style="display:none"/>
-                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-user-add" onclick='addImageUser()'/>
+                                <input type="file" required id="empresa-add-input" onchange="readURL(this, 'empresa-add');" name="empresa_foto" style="display:none"/>
+                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-empresa-add"
+                                     onclick='addImageEmpresa()'/>
                             </div> <!-- ./End zoom -->
                         </div> <!-- ./End card-avatar -->
                         <div class="content">
                             <p class="card-title font-weight-bold h3-responsive text-center">NOME DA EMPRESA</p>
                         </div> <!-- ./End content -->
                     </div> <!-- ./End card card-profile container -->
-                    <button class="btn btn-danger">teste</button>
+                    <div class="mb-2">
+                        <button class="btn danger-color-dark btn-block btn-lg font-weight-bold" data-toggle="modal" data-target="#modalCadastroProduto">
+                            <i class="fas fa-clipboard-list fa-lg"></i>&nbsp;&nbsp;Cadastro de Produto
+                        </button>
+
+                        <button class="btn info-color-dark btn-block btn-lg font-weight-bold" data-toggle="modal" data-target="#modalCadastroCampanha">
+                            <i class="fas fa-pencil-alt fa-lg"></i>&nbsp;&nbsp;Cadastrar Campanha
+                        </button>
+                    </div>
                 </div> <!-- ./End foto do perfil -->
-
-
 
                 <div class="col-md-8 mb-4">
                     <div class="card">
@@ -33,17 +40,19 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             <p class="my-0 h3-responsive white-text text-center font-weight-bold">Dados do Perfil</p>
                         </div>
                         <div class="card-content">
-                            <form class="text-center container" action="#" method="POST" style="color: #aaa;">
+                            <form class="text-center container needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaosocial" maxlength="250" length="250" required class="form-control">
+                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaosocial" maxlength="250" length="250" required
+                                                   class="form-control disabled">
                                             <div class="invalid-feedback">Digite a Razão Social</div>
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" length="250" required class="form-control">
+                                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" length="250" required
+                                                   class="form-control">
                                             <div class="invalid-feedback">Digite o Nome Fantasia</div>
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
@@ -52,13 +61,15 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" length="250" class="form-control">
+                                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" length="250"
+                                                   class="form-control">
                                             <div class="invalid-feedback">Digite o email corporativo</div>
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CNPJ (não pode edita)" class="form-control" required id="cnpjEmpresa" name="pes_receita" autocomplete="on" disabled>
+                                            <input type="text" placeholder="CNPJ" class="form-control disabled" disabled required id="cnpjEmpresa" name="pes_receita"
+                                                   autocomplete="on">
                                             <div class="invalid-feedback">Digite seu CNPJ</div>
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
@@ -67,14 +78,15 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" pattern="[0-9] {5} [\ -]? [0-9] {3}" maxlength="9" required class="form-control" autocomplete="on">
+                                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" pattern="[0-9] {5} [\ -]? [0-9] {3}" maxlength="9" required
+                                                   class="form-control" autocomplete="on">
                                             <div class="invalid-feedback">Digite o CEP</div>
-                                            <div class="valid-feedback">CEP é valido</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Localização" id="pesLocalizacao" name="end_localizacao" maxlength="250" required class="form-control">
+                                            <input type="text" placeholder="Localização" id="pesLocalizacao" name="end_localizacao" maxlength="250" required
+                                                   class="form-control">
                                             <div class="invalid-feedback">Escolha a localização</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
@@ -83,19 +95,22 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Endereço" maxlength="250" length="250" class="form-control" id="pesEndereco" required name="end_endereco" autocomplete="on">
+                                            <input type="text" placeholder="Endereço" maxlength="250" length="250" class="form-control" id="pesEndereco" required
+                                                   name="end_endereco" autocomplete="on">
                                             <div class="invalid-feedback">Digite seu endereço</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Número" maxlength="20" class="form-control" id="pesNumero" required name="end_numero" autocomplete="on">
+                                            <input type="text" placeholder="Número" maxlength="20" class="form-control" id="pesNumero" required name="end_numero"
+                                                   autocomplete="on">
                                             <div class="invalid-feedback">Digite seu número</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Cidade" maxlength="250" length="250" class="form-control" id="pesCidade" required name="cid_cidade" autocomplete="on">
+                                            <input type="text" placeholder="Cidade" maxlength="250" length="250" class="form-control" id="pesCidade" required name="cid_cidade"
+                                                   autocomplete="on">
                                             <div class="invalid-feedback">Digite sua cidade</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
@@ -104,19 +119,22 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Estado" min="2" maxlength="2" length="2" class="form-control" id="pesEstado" required name="est_sigla" autocomplete="on">
+                                            <input type="text" placeholder="Estado" min="2" maxlength="2" length="2" class="form-control" id="pesEstado" required
+                                                   name="est_sigla" autocomplete="on">
                                             <div class="invalid-feedback">Digite seu estado</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" length="250" required name="end_bairro" autocomplete="on">
+                                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" length="250" required name="end_bairro"
+                                                   autocomplete="on">
                                             <div class="invalid-feedback">Digite seu bairro</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" length="250" required name="end_complemento" autocomplete="on">
+                                            <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" length="250" required
+                                                   name="end_complemento" autocomplete="on">
                                             <div class="invalid-feedback">Digite seu complemento</div>
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
@@ -132,16 +150,168 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         </div> <!-- ./End card-content -->
                     </div> <!-- ./End card -->
                 </div> <!-- ./End col-md-8 -->
-            </div>
+            </div> <!-- ./End form-row -->
+        </div> <!-- ./End container -->
+    </div> <!-- ./End content -->
+</main> <!-- ./End main -->
+
+        <!-- --------------------------------------------------------------- -->
+        <!-- ----------------- MODAL DE RECUPERAR SENHA -------------------- -->
+        <!-- --------------------------------------------------------------- -->
+<main>
+    <div class="modal animated bounceIn" id="modalCadastroProduto" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header info-color-dark text-center">
+                    <h4 class="modal-title w-100 white-text font-weight-bold">Cadastrar Produto</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <form class="text-center needs-validation" novalidate action="#" method="POST"
+                          style="color: #aaa;">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" length="250" required
+                                           class="form-control">
+                                    <div class="invalid-feedback">Digite o nome do produto</div>
+                                </div> <!-- ./End md-form -->
+                            </div> <!-- ./End col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <input type="text" required id="CadProdutoPreco" name="pro_preco" placeholder="Preço do produto" class="form-control">
+                                    <div class="invalid-feedback">Digite o preço do produto</div>
+                                </div> <!-- ./End md-form -->
+                            </div> <!-- ./End col-md-6 -->
+                        </div> <!-- ./End form-row -->
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <input type="text" placeholder="Código de barras" required id="CadProdutoBarcode" name="pro_barcode" class="form-control">
+                                    <div class="invalid-feedback">Digite o código de barras</div>
+                                </div> <!-- ./md-form -->
+                            </div> <!-- ./col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="proc_descricao"
+                                            searchable="Pesquise aqui...">
+                                        <option value="" disabled selected>Categoria do produto</option>
+                                        <option value="1">Limpeza</option>
+                                        <option value="2">Alimentação</option>
+                                        <option value="3">Carnes</option>
+                                        <option value="4">Bebidas</option>
+                                    </select>
+                                </div> <!-- ./md-form -->
+                            </div> <!-- ./col-md-6 -->
+                        </div> <!-- ./End form-row -->
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao"
+                                              class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
+                                </div> <!-- ./md-form -->
+                            </div> <!-- ./col-md-6 -->
+                            <div class="col-md-4">
+                                <div class="md-form">
+                                    <div class="mb-2 d-md-block container">
+                                        <div class="float-right">
+                                            <input type="file" required id="produto-add-input" onchange="readURL(this, 'produto-add');" name="pro_imagem"
+                                                   style="display:none;"/>
+                                            <img class="d-md-block container d-block img-fluid img-produtos" src="images/logo_mercados/img-test-mercado.jpg"
+                                                 id="image-produto-add" onclick='addImageProduto()'/>
+                                        </div> <!-- ./End custom-file -->
+                                    </div> <!-- ./End input-group mb-3 md-form -->
+                                </div> <!-- ./End md-form -->
+                            </div> <!-- ./End col-md-6 -->
+                        </div> <!-- ./End form-row -->
+
+                        <div class="col-md-7 float-right">
+                            <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
+                        </div> <!-- ./End col-md-6 -->
+                    </form> <!-- ./End Form -->
+                </div> <!-- ./End modal-body mx-3 -->
+            </div> <!-- ./End modal-content -->
         </div>
     </div>
 </main>
 
+        <!-- --------------------------------------------------------------- -->
+        <!-- ----------------- MODAL DE CADASTRO DE CAMPANHA -------------------- -->
+        <!-- --------------------------------------------------------------- -->
 <main>
+    <div class="modal animated bounceIn" id="modalCadastroCampanha" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
+        <div class="modal-dialog modal-fluid container" role="document">
+            <div class="modal-content">
+                <div class="modal-header info-color-dark text-center">
+                    <h4 class="modal-title w-100 white-text font-weight-bold">Produtos para Promoção</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <form class="text-center needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" length="250" required
+                                           class="form-control">
+                                    <div class="invalid-feedback">Digite o nome do produto</div>
+                                </div> <!-- ./End md-form -->
+                            </div> <!-- ./End col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <input type="text" required id="CadProdutoPreco" name="pro_preco" placeholder="Preço do produto" class="form-control">
+                                    <div class="invalid-feedback">Digite o preço do produto</div>
+                                </div> <!-- ./End md-form -->
+                            </div> <!-- ./End col-md-6 -->
+                        </div> <!-- ./End form-row -->
 
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <input type="text" placeholder="Código de barras" required id="CadProdutoBarcode" name="pro_barcode" class="form-control">
+                                    <div class="invalid-feedback">Digite o código de barras</div>
+                                </div> <!-- ./md-form -->
+                            </div> <!-- ./col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="proc_descricao"
+                                            searchable="Pesquise aqui...">
+                                        <option value="" disabled selected>Categoria do produto</option>
+                                        <option value="1">Limpeza</option>
+                                        <option value="2">Alimentação</option>
+                                        <option value="3">Carnes</option>
+                                        <option value="4">Bebidas</option>
+                                    </select>
+                                </div> <!-- ./md-form -->
+                            </div> <!-- ./col-md-6 -->
+                        </div> <!-- ./End form-row -->
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao"
+                                              class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
+                                </div> <!-- ./md-form -->
+                            </div> <!-- ./col-md-6 -->
+                        </div> <!-- ./End form-row -->
+
+                        <div class="col-md-7 float-right">
+                            <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
+                        </div> <!-- ./End col-md-6 -->
+                    </form> <!-- Form -->
+                </div> <!-- ./End modal-body mx-3 -->
+            </div> <!-- ./End modal-content -->
+        </div>
+    </div>
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer.php"
+include PROJECT_ROOT."/html/_partHTML/footer.php"
 ?>
+
 </body>

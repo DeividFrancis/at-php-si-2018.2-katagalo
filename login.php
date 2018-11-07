@@ -1,10 +1,10 @@
 <?php
 $titulo = "Login - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix">
-<main class="container animated bounceIn">
+<main class="container animated bounceIn max-vertical">
     <div class="card">
         <h6 class="card-header info-color-dark float-left py-3">
             <p class="my-2 h5-responsive white-text float-left font-weight-bold" data-toggle="tooltip" data-placement="left" title="Voltar para página inicial">
@@ -21,16 +21,16 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                 <div class="form-row">
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj" required id="login-cpfcnpj" name="pes_receita" autocomplete="on">
-                            <div class="invalid-feedback">Você não preencheu o CPF/CNPJ</div>
-                            <div class="valid-feedback">CPF/CNPJ correto</div>
+                            <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj" required id="login-cpfcnpj" name="pes_receita" minlength="14" maxlength="18"
+                                   autocomplete="on">
+                            <div class="invalid-feedback">Você não preencheu o CPF/CNPJ ou está errado</div>
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-6 -->
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" name="pes_senha" required id="loginSenhaUsuario" class="form-control">
+                            <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" name="pes_senha" required id="loginSenhaUsuario"
+                                   class="form-control">
                             <div class="invalid-feedback">Senha precisa ser preenchida</div>
-                            <div class="valid-feedback">Senha está correta</div>
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-6 -->
                 </div> <!-- ./End form-row -->
@@ -60,7 +60,7 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
 <!-- --------------------------------------------------------------- -->
 <!-- ----------------- MODAL DE REGISTRO --------------------------- -->
 <!-- --------------------------------------------------------------- -->
-<main class="container">
+<main>
     <div class="modal animated bounceIn" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="modalRegisterConta" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -71,11 +71,12 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                     </button>
                 </div>
                 <div class="modal-body mx-3">
-                    <form  class="text-center needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
+                    <form class="text-center needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Nome Completo" maxlength="250" length="250" id="nomeCompleto" required name="pes_nome" class="form-control">
+                                    <input type="text" placeholder="Nome Completo" maxlength="250" length="250" id="nomeCompleto" required name="pes_nome"
+                                           class="form-control">
                                     <div class="invalid-feedback">Você não preencheu o nome completo</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
@@ -90,7 +91,8 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj" id="registrar-cpfcnpj" required name="pes_receita" autocomplete="on">
+                                    <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj" id="registrar-cpfcnpj" required name="pes_receita"
+                                           autocomplete="on">
                                     <div class="invalid-feedback">Você não preencheu o CPF/CNPJ</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
@@ -105,7 +107,8 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                         <div class="form-row">
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Endereço" maxlength="250" length="250" class="form-control" id="pesEndereco" required name="end_endereco" autocomplete="on">
+                                    <input type="text" placeholder="Endereço" maxlength="250" length="250" class="form-control" id="pesEndereco" required name="end_endereco"
+                                           autocomplete="on">
                                     <div class="invalid-feedback">Digite seu endereço</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
@@ -117,7 +120,8 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Cidade" maxlength="250" length="250" class="form-control" id="pesCidade" required name="cid_cidade" autocomplete="on">
+                                    <input type="text" placeholder="Cidade" maxlength="250" length="250" class="form-control" id="pesCidade" required name="cid_cidade"
+                                           autocomplete="on">
                                     <div class="invalid-feedback">Digite sua cidade</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
@@ -126,19 +130,22 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                         <div class="form-row">
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Estado" min="2" maxlength="2" length="2" class="form-control" id="pesEstado" required name="est_sigla" autocomplete="on">
+                                    <input type="text" placeholder="Estado" min="2" maxlength="2" length="2" class="form-control" id="pesEstado" required name="est_sigla"
+                                           autocomplete="on">
                                     <div class="invalid-feedback">Digite seu estado</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" length="250" required name="end_bairro" autocomplete="on">
+                                    <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" length="250" required name="end_bairro"
+                                           autocomplete="on">
                                     <div class="invalid-feedback">Digite seu bairro</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" length="250" required name="end_complemento" autocomplete="on">
+                                    <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" length="250" required
+                                           name="end_complemento" autocomplete="on">
                                     <div class="invalid-feedback">Digite seu complemento</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
@@ -147,13 +154,15 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="registrarSenhaUsuario" name="pes_senha" class="form-control">
+                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="registrarSenhaUsuario" name="pes_senha"
+                                           class="form-control">
                                     <div class="invalid-feedback">Os campos de senhas devem ser preenchidos</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirRegistrarsenhaUsuario" name="pes_senha" onblur="verificaSenha()" class="form-control">
+                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirRegistrarsenhaUsuario"
+                                           name="pes_senha" onblur="verificaSenha()" class="form-control">
                                     <div class="invalid-feedback">Os campos de senhas devem ser preenchidos</div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
@@ -169,12 +178,12 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
             </div> <!-- ./End Material form register -->
         </div> <!-- ./End modal-dialog -->
     </div> <!-- ./End modal animated fadeIn -->
-</main>
+</main> <!-- ./End main -->
 
 <!-- --------------------------------------------------------------- -->
 <!-- ----------------- MODAL DE RECUPERAR SENHA -------------------- -->
 <!-- --------------------------------------------------------------- -->
-<main class="container">
+<main>
     <div class="modal animated bounceIn" id="modalRecupeForm" tabindex="-1" role="dialog" aria-labelledby="modalRecuperarConta" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -195,7 +204,8 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                             <div class="col-md-12">
                                 <!-- CPF -->
                                 <div class="md-form">
-                                    <input type="email" placeholder="Digite seu email..." class="form-control" required id="emailRecuperarSenha" name="email_recuperar_senha" autocomplete="on">
+                                    <input type="email" placeholder="Digite seu email..." class="form-control" required id="emailRecuperarSenha" name="email_recuperar_senha"
+                                           autocomplete="on">
                                     <div class="invalid-feedback">Você não preencheu com seu email</div>
                                     <div class="valid-feedback">Email está correto</div>
                                 </div>
@@ -203,18 +213,17 @@ include PROJECT_ROOT . "/html/_partHTML/head.php" ?>
                         </div>
 
                         <div class="text-center container col-md-7 small mt-2">
-                            <button class="btn btn-danger btn-block btn-xl" name="btnRecuperarSenha" type="submit">Enviar para email</button>
+                            <button class="btn danger-color-dark btn-block btn-xl" name="btnRecuperarSenha" type="submit">Enviar para email</button>
                         </div>
-                    </form><!-- Form -->
+                    </form><!-- ./End Form -->
                 </div>
             </div>
         </div>
     </div>
-
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer2.php"
+include PROJECT_ROOT."/html/_partHTML/footer2.php"
 ?>
 
 </body>

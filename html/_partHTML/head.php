@@ -21,8 +21,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 
     <!-- Material Design Bootstrap -->
     <link href="css/animate.css" rel="stylesheet">

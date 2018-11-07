@@ -1,8 +1,8 @@
 <?php
 $titulo = "Configuração da conta - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php";
-include PROJECT_ROOT . "/html/_partHTML/headerConfigConta.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php";
+include PROJECT_ROOT."/html/_partHTML/headerConfigContaUsuario.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
@@ -29,7 +29,7 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigConta.php" ?>
                             <p class="my-0 h3-responsive white-text text-center font-weight-bold">Dados do Perfil</p>
                         </div>
                         <div class="card-content">
-                            <form class="text-center container" action="#" method="POST" style="color: #aaa;">
+                            <form class="text-center container needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
@@ -48,8 +48,7 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigConta.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj" id="atualizarCpfCnpj" required name="pes_receita" autocomplete="on">
-                                            <div class="invalid-feedback">Você não preencheu o CPF/CNPJ</div>
+                                            <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj disabled" id="atualizarCpfCnpj" required name="pes_receita" autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                     <div class="col-md-6">
@@ -128,6 +127,6 @@ include PROJECT_ROOT . "/html/_partHTML/headerConfigConta.php" ?>
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer.php"
+include PROJECT_ROOT."/html/_partHTML/footer.php"
 ?>
 </body>

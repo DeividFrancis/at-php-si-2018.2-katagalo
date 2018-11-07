@@ -2,7 +2,7 @@
 $titulo = "Produtos favoritos - KataGalo";
 require_once "./config.php";
 include PROJECT_ROOT . "/html/_partHTML/head.php";
-include PROJECT_ROOT . "/html/_partHTML/headerConfigConta.php" ?>
+include PROJECT_ROOT."/html/_partHTML/headerConfigContaUsuario.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
