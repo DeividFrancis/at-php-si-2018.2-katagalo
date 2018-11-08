@@ -1,8 +1,8 @@
 <?php
 $titulo = "Página do Mercado - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php";
-include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php";
+include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
@@ -40,8 +40,7 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay img-produtos container animated bounceIn">
                                 <a href="produto-page.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3"
-                                         alt="">
+                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
                                 </a>
                                 <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
                                 <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
@@ -247,7 +246,6 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
 </main>
 
 <main>
-    <!-- ./Start Section produtos -->
     <section class="text-center my-5 container">
         <h2 class="h2-responsive font-weight-bold text-center my-3 animated bounceInUp">Veja mais</h2>
         <div class="row">
@@ -356,7 +354,7 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer.php" ?>
+include PROJECT_ROOT."/html/_partHTML/footer.php" ?>
 
 </body>
 

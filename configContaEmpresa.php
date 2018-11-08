@@ -252,60 +252,71 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body mx-3">
-                    <form class="text-center needs-validation" novalidate action="#" method="POST" style="color: #aaa;">
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" length="250" required
-                                           class="form-control">
-                                    <div class="invalid-feedback">Digite o nome do produto</div>
-                                </div> <!-- ./End md-form -->
-                            </div> <!-- ./End col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" required id="CadProdutoPreco" name="pro_preco" placeholder="Preço do produto" class="form-control">
-                                    <div class="invalid-feedback">Digite o preço do produto</div>
-                                </div> <!-- ./End md-form -->
-                            </div> <!-- ./End col-md-6 -->
-                        </div> <!-- ./End form-row -->
-
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Código de barras" required id="CadProdutoBarcode" name="pro_barcode" class="form-control">
-                                    <div class="invalid-feedback">Digite o código de barras</div>
-                                </div> <!-- ./md-form -->
-                            </div> <!-- ./col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="proc_descricao"
-                                            searchable="Pesquise aqui...">
-                                        <option value="" disabled selected>Categoria do produto</option>
-                                        <option value="1">Limpeza</option>
-                                        <option value="2">Alimentação</option>
-                                        <option value="3">Carnes</option>
-                                        <option value="4">Bebidas</option>
-                                    </select>
-                                </div> <!-- ./md-form -->
-                            </div> <!-- ./col-md-6 -->
-                        </div> <!-- ./End form-row -->
-
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao"
-                                              class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
-                                </div> <!-- ./md-form -->
-                            </div> <!-- ./col-md-6 -->
-                        </div> <!-- ./End form-row -->
-
-                        <div class="col-md-7 float-right">
-                            <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
-                        </div> <!-- ./End col-md-6 -->
-                    </form> <!-- Form -->
+                <div class="modal-body mx-2">
+                    <section class="text-center">
+                        <div class="row">
+                            <div class="col-md-4 mb-2 clearfix d-md-block">
+                                <div class="card card-cascade narrower card-ecommerce">
+                                    <div class="align-items-center overlay zoom img-produtos container animated bounceIn">
+                                        <a data-toggle="modal" data-target="#exampleModalCenter">
+                                            <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
+                                        </a>
+                                        <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
+                                        <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
+                                    </div>
+                                    <div class="card-body card-body-cascade text-center">
+                                        <a href="#">
+                                            <p class="card-title my-4 animated bounceIn">
+                                                <strong>Produto 1</strong>
+                                            </p>
+                                        </a>
+                                        <div class="card-footer px-1">
+                                            <span class="float-left"><del>R$ 0,00</del></span>
+                                            <span class="text-center">R$ 0,00</span>
+                                            <span class="float-right">
+                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação"
+                                       data-original-title="Receber Notificação">
+                                        <i class="fas fa-bell"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"
+                                       data-original-title="Adicionar aos favoritos">
+                                        <i class="fas fa-heart"></i></a>
+                                                <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
+                                </span> <!-- ./End float-right -->
+                                        </div> <!-- ./End card-footer px-1 -->
+                                    </div> <!-- ./card-body card-body-cascade text-center -->
+                                </div> <!-- ./card card-cascade narrower card-ecommerce -->
+                            </div> <!-- ./col-md-4 mb-2 -->
+                        </div> <!-- ./class="row" -->
+                    </section><!-- ./End Section -->
                 </div> <!-- ./End modal-body mx-3 -->
             </div> <!-- ./End modal-content -->
+        </div>
+    </div>
+</main>
+
+<main>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+        <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
     </div>
 </main>
