@@ -7,26 +7,16 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
-    <!-- Section: Products v.5 -->
     <section class="text-center my-0">
-
-        <!-- Section heading -->
         <h2 class="h2-responsive font-weight-bold text-center my-5 animated bounceInUp">DESTAQUE DO DIA</h2>
-
-        <!-- Carousel Wrapper -->
         <div id="multi-item-example" class="carousel slide carousel-multi-item container" data-ride="carousel">
-
-            <!-- Controls -->
             <div class="controls-top container animated bounceInUp">
-
                 <button type="button" class="btn-floating btn-rounded btn btn-cyan" href="#multi-item-example" data-toggle="tooltip" title="Anterior" data-slide="prev">
                     <i class="fas fa-angle-left fa-2x"></i>
                 </button>
-
                 <button type="button" class="btn-floating btn-rounded btn btn-cyan" href="#multi-item-example" data-toggle="tooltip" title="Próximo" data-slide="next">
                     <i class="fas fa-angle-right fa-2x"></i>
                 </button>
-
             </div> <!-- Controls -->
 
             <!-- Indicators -->
@@ -37,22 +27,20 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
 
             <!-- Slides -->
             <div class="carousel-inner" role="listbox">
-
-                <!-- First slide -->
                 <div class="carousel-item active">
-
                     <div class="col-md-4 mb-2 clearfix d-md-block">
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay zoom img-produtos container">
                                 <a href="page-mercado.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                                    <img src="images/logo_mercados/img-test-mercado.jpg" class="card-img-top" alt="">
                                 </a>
                             </div> <!-- Card image -->
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 1</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
-                                                class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -62,7 +50,7 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay zoom img-produtos container">
                                 <a href="page-mercado.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                                    <img src="images/logo_mercados/img-test-mercado.jpg" class="card-img-top" alt="">
                                 </a>
                             </div> <!-- Card image -->
                             <div class="card-body card-body-cascade text-center">
@@ -79,7 +67,7 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay zoom img-produtos container">
                                 <a href="page-mercado.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                                    <img src="images/logo_mercados/img-test-mercado.jpg" class="card-img-top" alt="">
                                 </a>
                             </div> <!-- Card image -->
                             <div class="card-body card-body-cascade text-center">
@@ -99,7 +87,7 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay zoom img-produtos container">
                                 <a href="page-mercado.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                                    <img src="images/logo_mercados/img-test-mercado.jpg" class="card-img-top" alt="">
                                 </a>
                             </div> <!-- Card image -->
                             <div class="card-body card-body-cascade text-center">
@@ -116,7 +104,7 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay zoom img-produtos container">
                                 <a href="page-mercado.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                                    <img src="images/logo_mercados/img-test-mercado.jpg" class="card-img-top" alt="">
                                 </a>
                             </div> <!-- Card image -->
                             <div class="card-body card-body-cascade text-center">
@@ -133,14 +121,14 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
                         <div class="card card-cascade narrower card-ecommerce">
                             <div class="align-items-center overlay zoom img-produtos container">
                                 <a href="page-mercado.php">
-                                    <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                                    <img src="images/logo_mercados/img-test-mercado.jpg" class="card-img-top" alt="">
                                 </a>
                             </div> <!-- Card image -->
                             <div class="card-body card-body-cascade text-center">
                                 <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 6</strong></a>
                                 <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
-                                                class="fas fa-heart"></i></a>
+                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos">
+                                        <i class="fas fa-heart"></i></a>
                                 </span>
                             </div> <!-- ./End card-body card-body-cascade text-center -->
                         </div><!-- ./End card card-cascade narrower card-ecommerce -->
@@ -153,55 +141,21 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
 
 <main>
     <section class="text-center my-2 container">
-        <h2 class="h2-responsive font-weight-bold text-center my-2 animated bounceInUp">Lista de mercados</h2>
+        <h2 class="h2-responsive font-weight-bold text-center my-2 animated bounceInUp">Mercados</h2>
 
         <div class="row">
             <div class="col-md-4 mb-2 clearfix d-md-block">
                 <div class="card card-cascade narrower card-ecommerce">
                     <div class="align-items-center overlay zoom img-produtos container">
                         <a href="page-mercado.php">
-                            <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
+                            <img src="images/logo_mercados/mercado_irmaos_goncalves.jpeg" class="card-img-top" alt="">
                         </a>
                     </div> <!-- Card image -->
                     <div class="card-body card-body-cascade text-center">
                         <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 1</strong></a>
                         <span class="float-right">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
-                                        class="fas fa-heart"></i></a>
-                        </span>
-                    </div> <!-- ./End card-body card-body-cascade text-center -->
-                </div><!-- ./End card card-cascade narrower card-ecommerce -->
-            </div> <!-- ./End col-md-4 mb-2 clearfix d-md-block -->
-
-            <div class="col-md-4 mb-2 clearfix d-md-block">
-                <div class="card card-cascade narrower card-ecommerce">
-                    <div class="align-items-center overlay zoom img-produtos container">
-                        <a href="page-mercado.php">
-                            <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
-                        </a>
-                    </div> <!-- Card image -->
-                    <div class="card-body card-body-cascade text-center">
-                        <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 2</strong></a>
-                        <span class="float-right">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
-                                        class="fas fa-heart"></i></a>
-                        </span>
-                    </div> <!-- ./End card-body card-body-cascade text-center -->
-                </div><!-- ./End card card-cascade narrower card-ecommerce -->
-            </div> <!-- ./End col-md-4 mb-2 clearfix d-md-block -->
-
-            <div class="col-md-4 mb-2 clearfix d-md-block">
-                <div class="card card-cascade narrower card-ecommerce">
-                    <div class="align-items-center overlay zoom img-produtos container">
-                        <a href="page-mercado.php">
-                            <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="">
-                        </a>
-                    </div> <!-- Card image -->
-                    <div class="card-body card-body-cascade text-center">
-                        <a href="page-mercado.php" class="card-title my-4 ml-4 animated bounceIn"><strong>Mercado 3</strong></a>
-                        <span class="float-right">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"><i
-                                        class="fas fa-heart"></i></a>
+                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos">
+                                <i class="fas fa-heart"></i></a>
                         </span>
                     </div> <!-- ./End card-body card-body-cascade text-center -->
                 </div><!-- ./End card card-cascade narrower card-ecommerce -->

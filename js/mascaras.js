@@ -14,6 +14,7 @@ $(document).ready(function () {
 
     $('#pesCep').mask('00000-000', {reverse: true});
     $('#CadProdutoPreco').mask('#.##0,00', {reverse: true});
+    $('#campanhaProdutoPreco').mask('#.##0,00', {reverse: true});
     $('.date').mask('00/00/0000');
 
 

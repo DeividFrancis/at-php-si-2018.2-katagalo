@@ -24,13 +24,13 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         </div> <!-- ./End content -->
                     </div> <!-- ./End card card-profile container -->
                     <div class="mb-2">
-                        <button class="btn danger-color-dark btn-block btn-lg font-weight-bold" data-toggle="modal" data-target="#modalCadastroProduto">
+                        <a class="btn danger-color-dark btn-block btn-lg font-weight-bold white-text" data-toggle="modal" data-target="#modalCadastroProduto">
                             <i class="fas fa-clipboard-list fa-lg"></i>&nbsp;&nbsp;Cadastro de Produto
-                        </button>
+                        </a>
 
-                        <button class="btn info-color-dark btn-block btn-lg font-weight-bold" data-toggle="modal" data-target="#modalCadastroCampanha">
+                        <a class="btn info-color-dark btn-block btn-lg font-weight-bold white-text" href="cadastroCampanha.php">
                             <i class="fas fa-pencil-alt fa-lg"></i>&nbsp;&nbsp;Cadastrar Campanha
-                        </button>
+                        </a>
                     </div>
                 </div> <!-- ./End foto do perfil -->
 
@@ -156,7 +156,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
 </main> <!-- ./End main -->
 
         <!-- --------------------------------------------------------------- -->
-        <!-- ----------------- MODAL DE RECUPERAR SENHA -------------------- -->
+        <!-- ----------------- MODAL DE CADASTRAR PRODUTO ------------------ -->
         <!-- --------------------------------------------------------------- -->
 <main>
     <div class="modal animated bounceIn" id="modalCadastroProduto" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
@@ -239,87 +239,10 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
     </div>
 </main>
 
-        <!-- --------------------------------------------------------------- -->
-        <!-- ----------------- MODAL DE CADASTRO DE CAMPANHA -------------------- -->
-        <!-- --------------------------------------------------------------- -->
 <main>
-    <div class="modal animated bounceIn" id="modalCadastroCampanha" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
-        <div class="modal-dialog modal-fluid container" role="document">
-            <div class="modal-content">
-                <div class="modal-header info-color-dark text-center">
-                    <h4 class="modal-title w-100 white-text font-weight-bold">Produtos para Promoção</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body mx-2">
-                    <section class="text-center">
-                        <div class="row">
-                            <div class="col-md-4 mb-2 clearfix d-md-block">
-                                <div class="card card-cascade narrower card-ecommerce">
-                                    <div class="align-items-center overlay zoom img-produtos container animated bounceIn">
-                                        <a data-toggle="modal" data-target="#exampleModalCenter">
-                                            <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top my-3" alt="">
-                                        </a>
-                                        <div class="badge badge-pill green mr-1 animated bounceIn">Novo</div>
-                                        <div class="badge badge-pill red mr-1 animated bounceIn">Categoria: ---</div>
-                                    </div>
-                                    <div class="card-body card-body-cascade text-center">
-                                        <a href="#">
-                                            <p class="card-title my-4 animated bounceIn">
-                                                <strong>Produto 1</strong>
-                                            </p>
-                                        </a>
-                                        <div class="card-footer px-1">
-                                            <span class="float-left"><del>R$ 0,00</del></span>
-                                            <span class="text-center">R$ 0,00</span>
-                                            <span class="float-right">
-                                    <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação"
-                                       data-original-title="Receber Notificação">
-                                        <i class="fas fa-bell"></i></a>
-                                    <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"
-                                       data-original-title="Adicionar aos favoritos">
-                                        <i class="fas fa-heart"></i></a>
-                                                <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
-                                </span> <!-- ./End float-right -->
-                                        </div> <!-- ./End card-footer px-1 -->
-                                    </div> <!-- ./card-body card-body-cascade text-center -->
-                                </div> <!-- ./card card-cascade narrower card-ecommerce -->
-                            </div> <!-- ./col-md-4 mb-2 -->
-                        </div> <!-- ./class="row" -->
-                    </section><!-- ./End Section -->
-                </div> <!-- ./End modal-body mx-3 -->
-            </div> <!-- ./End modal-content -->
-        </div>
-    </div>
+
 </main>
 
-<main>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
-        <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
-        <div class="modal-dialog modal-dialog-centered" role="document">
-
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
 
 <?php
 include PROJECT_ROOT."/html/_partHTML/footer.php"
