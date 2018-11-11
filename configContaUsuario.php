@@ -1,5 +1,5 @@
 <?php
-$titulo = "Configuração da conta - KataGalo";
+$titulo = "Sua Conta - KataGalo";
 require_once "./config.php";
 include PROJECT_ROOT."/html/_partHTML/head.php";
 include PROJECT_ROOT."/html/_partHTML/headerConfigContaUsuario.php" ?>

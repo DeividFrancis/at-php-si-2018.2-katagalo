@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?= (isset($titulo) == true)? $titulo : "KataGalo"?></title>
+    <title><?= (isset($titulo) == true) ? $titulo : "KataGalo" ?></title>
 
-    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 
     <!-- Chrome, Firefox OS, Opera and Vivaldi -->
     <meta name="theme-color" content="#17a2b8">
@@ -25,12 +25,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 
     <!-- Material Design Bootstrap -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/mdb.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/responsive.css" type="text/css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
