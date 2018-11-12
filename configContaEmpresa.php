@@ -174,7 +174,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="proc_descricao"
+                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="pro_categoria"
                                             searchable="Pesquise aqui...">
                                         <option value="" disabled selected>Categoria do produto</option>
                                         <option value="1">Limpeza</option>
@@ -189,8 +189,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control"
-                                              maxlength="250" length="250" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-4">

@@ -142,13 +142,12 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
 <main>
     <section class="text-center my-2 container">
         <h2 class="h2-responsive font-weight-bold text-center my-2 animated bounceInUp">Mercados</h2>
-
         <div class="row">
             <div class="col-md-4 mb-2 clearfix d-md-block">
                 <div class="card card-cascade narrower card-ecommerce">
                     <div class="align-items-center overlay zoom img-produtos container">
                         <a href="page-mercado.php">
-                            <img src="images/logo_mercados/mercado_irmaos_goncalves.jpeg" class="card-img-top" alt="">
+                            <img src="images/logo_mercados/mercado_a_luzitana.jpg" class="card-img-top" alt="">
                         </a>
                     </div> <!-- Card image -->
                     <div class="card-body card-body-cascade text-center">

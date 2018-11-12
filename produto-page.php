@@ -1,29 +1,26 @@
 <?php
 $titulo = "Página do produto - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT . "/html/_partHTML/head.php";
-include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php";
+include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
     <div class="container">
         <div class="row wow animated bounceIn">
             <div class="col-md-4 mb-2 container img-fluid zoom">
-                <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" alt="Imagem do produto">
+                <img src="images/logos_produtos/img-test-produto.jpg" class="card-img-top" name="pro_imagem" alt="Imagem do produto">
             </div>
-            <!--./End Grid column -->
 
             <!--Grid column-->
             <div class="col-md-7">
                 <div class="p-0">
-
-                    <!-- ./Tag Labels-->
                     <div class="mb-3">
                         <span class="badge badge-pill green mr-1">Novo</span>
-                        <span class="badge badge-pill red mr-1">Categoria: ---</span>
+                        <span class="badge badge-pill red mr-1" name="pro_categoria">Categoria:</span>
                     </div>
                     <div class="my-4">
-                        <strong>Nome do produto</strong>
+                        <strong name="pro_nome">Nome do produto</strong>
                     </div>
 
                     <!-- Nav tabs -->
@@ -35,40 +32,34 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
                             <a class="nav-link" data-toggle="tab" href="#peso" role="tab">Peso</a>
                         </li>
                     </ul>
+
                     <!-- Tab panels -->
                     <div class="tab-content">
-                        <!--Panel 1-->
                         <div class="tab-pane fade ml-5 in show active" id="unidade" role="tabpanel">
-                            <span><del>R$ 0,00</del></span>
-                            <span class="ml-3">R$ 0,00</span>
+                            <span name="por_preco"><del>R$ 0,00</del></span>
+                            <span class="ml-3" name="camp_precocampanha">R$ 0,00</span>
                         </div>
-                        <!--/.End Panel 1-->
 
                         <div class="tab-pane fade ml-5" id="peso" role="tabpanel">
-                            <span><del>R$ 0,00</del></span>
-                            <span class="ml-3">R$ 0,00</span>
+                            <span name="por_preco"><del>R$ 0,00</del></span>
+                            <span class="ml-3" name="camp_precocampanha">R$ 0,00</span>
                         </div>
-                        <!--/.End Panel 2-->
                     </div>
 
                     <div class="form-row my-3">
                         <div class="col-md-5 my-3 text-center">
-                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação"
-                               data-original-title="Receber Notificação">
+                            <a class="ml-3" data-toggle="tooltip" id="alertaId" onClick="mudaCorAlerta(this.id)" data-placement="top" title="Receber Notificação">
                                 <i class="fas fa-bell fa-lg"></i>&nbsp;&nbsp;Receber Notificação</a>
                         </div>
 
-                        <span class="block-example text-center border-left border-gray"></span>
+                        <span class="block-exam ple text-center border-left border-gray"></span>
 
                         <div class="col-md-5 my-3 text-center">
-                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos"
-                               data-original-title="Adicionar aos favoritos">
+                            <a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top" title="Adicionar aos favoritos">
                                 <i class="fas fa-heart fa-lg"></i>&nbsp;&nbsp;Adicionar aos favoritos</a>
-                        </div><!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
+                        </div>
                     </div>
 
-
-                    <!--Accordion wrapper-->
                     <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
                         <div class="card">
                             <div class="card-header" role="tab" id="headingOne">
@@ -76,43 +67,24 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
                                     <p class="mb-0">Descrição<i class="fa fa-angle-down rotate-icon"></i></p>
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx">
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" id="descricaoProduto"
+                                 name="pro_descricao">
                                 <div class="card-body p-j">
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição,
-                                    Descrição, Descrição, Descrição, Descrição, Descrição, Descrição.
+                                    Descrição do produto
                                 </div>
                             </div>
-                        </div> <!-- Accordion card -->
-
-                    </div> <!-- Accordion card -->
+                        </div>
+                    </div>
                 </div>
-                <!--/.Accordion wrapper-->
             </div>
-            <!--Content-->
         </div>
-        <!--Grid column-->
-    </div>
-    <!--Grid row-->
     </div>
 </main>
 
 <main>
-    <!-- Section: Products v.5 -->
     <section class="text-center my-0">
-
-        <!-- Section heading -->
         <h2 class="h2-responsive font-weight-bold text-center my-5">Produtos semelhantes</h2>
-
-        <!-- Carousel Wrapper -->
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-            <!-- Controls -->
             <div class="controls-top">
                 <button type="button" class="btn-rounded btn-floating btn btn-cyan" href="#multi-item-example" data-slide="prev" data-toggle="tooltip" title="Anterior">
                     <i class="fas fa-angle-left fa-2x"></i>
@@ -130,7 +102,6 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
 
             <!-- Slides -->
             <div class="carousel-inner" role="listbox">
-
                 <!-- First slide -->
                 <div class="carousel-item active">
                     <div class="col-md-4 mb-2 clearfix d-md-block">
@@ -153,7 +124,6 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
 											<a class="ml-3" data-toggle="tooltip" id="favoritoId" onClick="mudaCorFav(this.id)" data-placement="top"
                                                title="Adicionar aos favoritos" data-original-title="Adicionar aos favoritos">
 												<i class="fas fa-heart"></i></a>
-                                        <!-- o evento onclick chama a função addFav la do arquivo js/ajax.js e passa como parametro o id do Produto Obs: substituir o idProd por codigo PHP para imprimir o id do produto -->
 										</span> <!-- ./End float-right -->
                                 </div> <!-- ./End card-footer px-1 -->
                             </div> <!-- ./End card-body card-body-cascade text-center -->
@@ -308,7 +278,7 @@ include PROJECT_ROOT . "/html/_partHTML/headerGlobal.php" ?>
 </main>
 
 <?php
-include PROJECT_ROOT . "/html/_partHTML/footer.php" ?>
+include PROJECT_ROOT."/html/_partHTML/footer.php" ?>
 
 </body>
 
