@@ -15,7 +15,8 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="card-avatar">
                             <div class="zoom">
                                 <input type="file" required id="empresa-add-input" onchange="readURL(this, 'empresa-add');" name="empresa_foto" style="display:none"/>
-                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-empresa-add" onclick='addImageEmpresa()'/>
+                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-empresa-add"
+                                     onclick='addImageEmpresa()'/>
                             </div> <!-- ./End zoom -->
                         </div> <!-- ./End card-avatar -->
                         <div class="content">
@@ -43,14 +44,12 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaosocial" maxlength="250" length="250" required
-                                                   class="form-control disabled">
+                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaosocial" maxlength="250" required class="form-control">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" length="250" required
-                                                   class="form-control">
+                                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" required class="form-control">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                 </div> <!-- ./End form-row -->
@@ -58,13 +57,12 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" length="250"
-                                                   class="form-control">
+                                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" class="form-control">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CNPJ" class="form-control disabled" id="cnpjEmpresa" name="pes_receita" autocomplete="on">
+                                            <input type="text" placeholder="CNPJ" class="form-control disabled" required id="cnpjEmpresa" name="pes_receita" autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                 </div> <!-- ./End form-row -->
@@ -86,7 +84,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Endereço" maxlength="250" length="250" class="form-control" id="pesEndereco" required name="end_endereco"
+                                            <input type="text" placeholder="Endereço" maxlength="250" class="form-control" id="pesEndereco" required name="end_endereco"
                                                    autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
@@ -97,7 +95,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Cidade" maxlength="250" length="250" class="form-control" id="pesCidade" required name="cid_cidade"
+                                            <input type="text" placeholder="Cidade" maxlength="250" class="form-control" id="pesCidade" required name="cid_cidade"
                                                    autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
@@ -106,20 +104,19 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Estado" min="2" maxlength="2" length="2" class="form-control" id="pesEstado" required name="est_sigla"
+                                            <input type="text" placeholder="Estado" min="2" maxlength="2" class="form-control" id="pesEstado" required name="est_sigla"
                                                    autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" length="250" required name="end_bairro"
-                                                   autocomplete="on">
+                                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" required name="end_bairro" autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" length="250" required
-                                                   name="end_complemento" autocomplete="on">
+                                            <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" name="end_complemento"
+                                                   autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                 </div> <!-- ./End form-row -->
@@ -129,6 +126,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                         <button type="submit" name="btnConfirmarAtualizacao" class="btn btn-purple btn-block mb-2">Confirmar</button>
                                     </div> <!-- ./End md-form -->
                                 </div> <!-- ./End col-md-8 float-right -->
+                                <input type="hidden" name="method" value="insert"/>
                             </form> <!-- ./End form -->
                         </div> <!-- ./End card-content -->
                     </div> <!-- ./End card -->
@@ -142,8 +140,8 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
 <!-- ----------------- MODAL DE CADASTRAR PRODUTO ------------------ -->
 <!-- --------------------------------------------------------------- -->
 <main>
-    <div class="modal animated bounceIn container" id="modalCadastroProduto" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
-        <div class="modal-dialog modal-fluid" role="document">
+    <div class="modal animated bounceIn" id="modalCadastroProduto" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header info-color-dark text-center">
                     <h4 class="modal-title w-100 white-text font-weight-bold">Cadastrar Produto</h4>
@@ -151,12 +149,12 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body mx-3">
-                    <form class="text-center" action="#" method="POST" style="color: #aaa;">
+                <div class="modal-body">
+                    <form action="#" method="post" style="color: #aaa;">
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" length="250" required class="form-control">
+                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" required class="form-control">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
@@ -189,7 +187,8 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control"
+                                              maxlength="250" length="250" rows="8"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-4">
@@ -209,6 +208,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;
                                 <i class="fa fa-check fa-lg"></i></button>
                         </div> <!-- ./End col-md-6 -->
+                        <input type="hidden" name="method" value="insert"/>
                     </form> <!-- ./End Form -->
                 </div> <!-- ./End modal-body mx-3 -->
             </div> <!-- ./End modal-content -->
@@ -229,37 +229,30 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body mx-3">
+                <div class="modal-body">
                     <form class="text-center" action="#" method="POST" style="color: #aaa;">
                         <div class="form-row">
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Nome da Campanha" id="cadNomeCampanha" name="cam_nome" maxlength="250" length="250" required class="form-control">
+                                    <input type="text" placeholder="Nome da Campanha" id="cadNomeCampanha" name="cam_nome" maxlength="250" required class="form-control">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Data de início da promoção" id="dataInicioCampanha" name="cam_inicio" class="form-control date">
+                                    <input type="text" placeholder="Data de início da promoção" id="dataInicioCampanha" name="cam_inicio" class="form-control datepicker">
                                 </div>
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" required id="CadDataFinalCampanha" name="cam_fim" placeholder="Data final da campanha" class="form-control date">
+                                    <input type="text" required id="CadDataFinalCampanha" name="cam_fim" placeholder="Data final da campanha" class="form-control datepicker">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
 
                         <div class="form-row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CadObservacaoCampanha" required name="pro_descricao    "
-                                              class="md-textarea form-control" maxlength="2000" length="2000" rows="8"></textarea>
-                                </div> <!-- ./md-form -->
-                            </div> <!-- ./col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control"
-                                              axlength="250" length="250" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Descrição do produto" id="CadObservacaoCampanha" required name="cam_observacao" class="md-textarea form-control" maxlength="2000" length="2000" rows="8"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                         </div> <!-- ./End form-row -->
@@ -268,6 +261,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             <a href="selectProdutoCampanha.php" class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;
                                 <i class="fa fa-check fa-lg"></i></a>
                         </div> <!-- ./End col-md-6 -->
+                        <input type="hidden" name="method" value="insert"/>
                     </form> <!-- ./End Form -->
                 </div> <!-- ./End modal-body mx-3 -->
             </div> <!-- ./End modal-content -->

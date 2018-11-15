@@ -2,39 +2,31 @@ $(document).ready(function () {
 
     function limpa_formulário_cep() {
         // Limpa valores do formulário de cep.
-        $("#end_bairro").val("");
-        $("#cid_cidade").val("");
-        $("#est_sigla").val("");
+        $("#pesCidade").val("");
+        $("#pesEstado").val("");
+        $("#pesBairro").val("");
     }
 
     //Quando o campo cep perde o foco.
-    $("#end_cep").blur(function () {
-
-        //Nova variável "cep" somente com dígitos.
+    $("#pesCep").blur(function () {
         var cep = $(this).val().replace(/\D/g, '');
-
         //Verifica se campo cep possui valor informado.
         if (cep != "") {
-
             //Expressão regular para validar o CEP.
             var validacep = /^[0-9]{8}$/;
-
             //Valida o formato do CEP.
             if (validacep.test(cep)) {
-
                 //Preenche os campos com "..." enquanto consulta webservice.
-                $("#end_bairro").val("Buscando...");
-                $("#cid_cidade").val("Buscando...");
-                $("#est_sigla").val("Buscando...");
-
+                $("#pesCidade").val("Aguarde...");
+                $("#pesEstado").val("Aguarde...");
+                $("#pesBairro").val("Aguarde...");
                 //Consulta o webservice viacep.com.br/
                 $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
-
                     if (!("erro" in dados)) {
                         //Atualiza os campos com os valores da consulta.
-                        $("#end_bairro").val(dados.bairro);
-                        $("#cid_cidade").val(dados.localidade);
-                        $("#est_sigla").val(dados.uf);
+                        $("#pesCidade").val(dados.localidade);
+                        $("#pesEstado").val(dados.uf);
+                        $("#pesBairro").val(dados.bairro);
                     } //end if.
                     else {
                         //CEP pesquisado não foi encontrado.
