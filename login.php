@@ -7,12 +7,12 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 <main class="container animated bounceIn max-vertical">
     <div class="card">
         <h6 class="card-header info-color-dark float-left py-3">
-            <p class="my-2 h5-responsive white-text float-left font-weight-bold" data-toggle="tooltip" data-placement="left" title="Voltar para página inicial">
+            <p class="my-3 h5-responsive white-text float-left font-weight-bold" data-toggle="tooltip" data-placement="left" title="Voltar para página inicial">
                 <a href="index.php">
                     <i class="fas fa-arrow-left fa-2x white-text"></i>
                 </a>
             </p>
-            <p class="my-3 h3-responsive white-text text-center font-weight-bold">Acessar conta</p>
+            <p class="my-4 h3-responsive text-uppercase white-text text-center font-weight-bold">Acessar conta</p>
         </h6>
 
         <!--Card content-->
@@ -33,14 +33,13 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 </div> <!-- ./End form-row -->
 
                 <div class="text-center float-right col-md-4 d-block small mt-2">
-                    <button class="btn success-color-dark btn-block btn-lg" id="btnLogin" type="submit">Entrar&nbsp;&nbsp;
+                    <button class="btn success-color-dark btn-block btn-lg font-weight-bold" id="btnLogin" type="submit">Entrar&nbsp;&nbsp;
                         <i class="fas fa-sign-in-alt fa-lg"></i>
                     </button> <!-- ./text-center float-right col-md-6 d-block small mt-2 -->
                 </div>
 
                 <div class="float-right col-md-4 d-block small mt-2">
-                    <a class="btn warning-color-dark white-text btn-block btn-lg" data-toggle="modal" data-target="#modalRegisterForm" id="btnRegistrar">Registrar&nbsp;&nbsp;
-                        <i class="fas fa-pencil-alt fa-lg"></i>
+                    <a class="btn warning-color-dark white-text btn-block btn-lg font-weight-bold" data-toggle="modal" data-target="#modalRegisterForm" id="btnRegistrar"><i class="fas fa-pencil-alt fa-lg"></i>&nbsp;&nbsp;Registrar
                     </a> <!-- ./text-center float-right col-md-6 d-block small mt-2 -->
                 </div>
 
@@ -49,7 +48,6 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <p class="blue-text font-weight-bold">Esqueci minha senha</p>
                     </a> <!-- ./End text-center float-right col-md-4 d-block small mt-2 -->
                 </div> <!-- ./End text-center float-right col-md-6 d-block small mt-2 -->
-                <input type="hidden" name="method" value="insert"/>
             </form> <!-- ./End Form -->
         </div> <!-- ./End card-body px-lg-5 pt-0 -->
     </div> <!-- ./End Material form login -->
@@ -63,13 +61,13 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header info-color-dark text-center">
-                    <h4 class="modal-title w-100 white-text font-weight-bold">Registrar conta</h4>
+                    <stronf class="modal-title w-100 white-text h3-responsive text-uppercase font-weight-bold">Registrar conta</stronf>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body mx-3">
-                    <form action="#" method="post" style="color: #aaa;">
+                    <form action="configContaUsuario.php" method="post" style="color: #aaa;">
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
@@ -126,24 +124,27 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="registrarSenha" name="pes_senha"
+                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senha" name="pes_senha"
                                            class="form-control">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirRegistrarsenha"
-                                           name="pes_repetirSenha" class="form-control">
+                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirSenha" name="pes_repetirSenha"
+                                           class="form-control" onblur="verificaSenha()">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
 
-                        <div class="d-block small mt-2">
-                            <button class="btn btn-success btn-block btn-lg" id="btnRegistrarPessoaFisica" type="submit" onclick="validatePassword()">Registar&nbsp;&nbsp;
+                        <div class="col-md-6 mb-2 float-left">
+                            <button class="btn btn-success btn-block btn-lg font-weight-bold" id="btnRegistrarPessoaFisica" type="submit">Registar&nbsp;&nbsp;
                                 <i class="fas fa-sign-in-alt"></i>
                             </button>
                         </div> <!-- ./End text-center float-right col-md-12 d-block small mt-2 -->
-                        <input type="hidden" name="method" value="insert"/>
+
+                        <div class="col-md-6 mb-2 float-left">
+                            <a href="registerEmpresa.php" class="btn info-color-dark btn-block btn-lg white-text font-weight-bold" id="btnRegistrarPessoaJuridica"><i class="fas fa-pencil-alt fa-lg"></i>&nbsp;&nbsp;Cadastre sua empresa</a>
+                        </div> <!-- ./End text-center float-right col-md-12 d-block small mt-2 -->
                     </form> <!-- ./End Form -->
                 </div> <!-- ./End modal-body mx-3 -->
             </div> <!-- ./End Material form register -->

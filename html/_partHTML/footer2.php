@@ -1,3 +1,4 @@
+<!--Footer-->
 <footer class="page-footer text-center text-md-left pt-4">
 
     <!--Copyright-->
@@ -5,7 +6,8 @@
         <div class="container-fluid text-center">
             <p class="white-text">Todo os direitos reservados &copy; <a href="index.php" class="grey-text">KataGalo</a></p>
         </div>
-    </div> <!--/.Copyright-->
+    </div>
+    <!--/.Copyright-->
 
 </footer>
 <!--/.End Footer-->
@@ -31,7 +33,6 @@
 <script type="text/javascript" src="js/uploadImg.js"></script>
 <script type="text/javascript" src="js/submit.js"></script>
 <script type="text/javascript" src="js/viaCep.js"></script>
-
 
 <script>
     // Material Select Initialization

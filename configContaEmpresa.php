@@ -9,7 +9,6 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
     <div class="content">
         <div class="container">
             <div class="form-row">
-                <!-- ./Start foto do perfil -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-profile container mb-3">
                         <div class="card-avatar">
@@ -40,7 +39,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             <p class="my-0 h3-responsive white-text text-center font-weight-bold">Dados do Perfil</p>
                         </div>
                         <div class="card-content">
-                            <form class="text-center container" action="#" method="POST" style="color: #aaa;">
+                            <form class="container" action="configContaEmpresa.php" method="post" style="color: #aaa;">
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
@@ -62,7 +61,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CNPJ" class="form-control disabled" required id="cnpjEmpresa" name="pes_receita" autocomplete="on">
+                                            <input type="text" placeholder="CNPJ" class="form-control" required id="cnpjEmpresa" name="pes_receita" autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                 </div> <!-- ./End form-row -->
@@ -70,8 +69,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" pattern="[0-9] {5} [\ -]? [0-9] {3}" maxlength="9" required
-                                                   class="form-control" autocomplete="on">
+                                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" maxlength="9" required class="form-control" autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                     <div class="col-md-6">
@@ -126,7 +124,6 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                         <button type="submit" name="btnConfirmarAtualizacao" class="btn btn-purple btn-block mb-2">Confirmar</button>
                                     </div> <!-- ./End md-form -->
                                 </div> <!-- ./End col-md-8 float-right -->
-                                <input type="hidden" name="method" value="insert"/>
                             </form> <!-- ./End form -->
                         </div> <!-- ./End card-content -->
                     </div> <!-- ./End card -->
@@ -191,7 +188,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                               maxlength="250" length="250" rows="8"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="md-form">
                                     <div class="mb-2 d-md-block container">
                                         <div class="float-right">
@@ -204,11 +201,9 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
 
-                        <div class="col-md-7 float-right">
-                            <button class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;
-                                <i class="fa fa-check fa-lg"></i></button>
+                        <div class="col-md-12 float-right">
+                            <button class="btn btn-success btn-block mt-5">Gravar&nbsp;&nbsp;<i class="fa fa-check fa-lg"></i></button>
                         </div> <!-- ./End col-md-6 -->
-                        <input type="hidden" name="method" value="insert"/>
                     </form> <!-- ./End Form -->
                 </div> <!-- ./End modal-body mx-3 -->
             </div> <!-- ./End modal-content -->
@@ -226,25 +221,25 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                 <div class="modal-header info-color-dark text-center">
                     <h4 class="modal-title w-100 white-text font-weight-bold">Cadastrar Campanha</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
+                        <span class="white-text h3-responsive" aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="text-center" action="#" method="POST" style="color: #aaa;">
+                    <form action="selectProdutoCampanha.php" method="post" style="color: #aaa;">
                         <div class="form-row">
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Nome da Campanha" id="cadNomeCampanha" name="cam_nome" maxlength="250" required class="form-control">
+                                    <input type="text" placeholder="Nome da Campanha" required id="cadNomeCampanha" name="cam_nome" maxlength="250" class="form-control">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Data de início da promoção" id="dataInicioCampanha" name="cam_inicio" class="form-control datepicker">
+                                    <input type="text" placeholder="Data de início da promoção" required id="dataInicioCampanha" name="cam_inicio" class="form-control date">
                                 </div>
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" required id="CadDataFinalCampanha" name="cam_fim" placeholder="Data final da campanha" class="form-control datepicker">
+                                    <input type="text" placeholder="Data final da campanha" required id="CadDataFinalCampanha" name="cam_fim" class="form-control date">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
@@ -252,14 +247,15 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-12">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CadObservacaoCampanha" required name="cam_observacao" class="md-textarea form-control" maxlength="2000" length="2000" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Digite algo sobre a campanha" id="CadObservacaoCampanha" required name="cam_observacao"
+                                              class="md-textarea form-control" maxlength="2000" length="2000" rows="5"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                         </div> <!-- ./End form-row -->
 
-                        <div class="col-md-6 float-right">
-                            <a href="selectProdutoCampanha.php" class="btn btn-success btn-block btn-md mt-0 my-5">Gravar&nbsp;&nbsp;
-                                <i class="fa fa-check fa-lg"></i></a>
+                        <div class="col-md-4 float-right">
+                            <button type="submit" id="btnGravaPromo" class="btn btn-success btn-block">Gravar&nbsp;&nbsp;
+                                <i class="fa fa-check fa-lg"></i></button>
                         </div> <!-- ./End col-md-6 -->
                         <input type="hidden" name="method" value="insert"/>
                     </form> <!-- ./End Form -->
