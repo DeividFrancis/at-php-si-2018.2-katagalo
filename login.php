@@ -124,14 +124,12 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senha" name="pes_senha"
-                                           class="form-control">
+                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senha" name="pes_senha" class="form-control">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirSenha" name="pes_repetirSenha"
-                                           class="form-control" onblur="verificaSenha()">
+                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirSenha" name="pes_repetirSenha" class="form-control" onblur="verificaSenha()">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
@@ -167,8 +165,8 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 </div>
                 <div class="modal-body mx-3">
                     <form class="text-center" action="#" method="POST" style="color: #aaa;">
-                        <div class="my-3 p-j grey-text">
-                            <p>Para recuperar a sua senha, digita abaixo o email que foi cadastrado, quando você fez o cadastro.</p>
+                        <div class="my-2 p-j grey-text">
+                            <p>Para recuperar a sua senha, digita abaixo o email que foi cadastrado quando você fez o cadastro no nosso site.</p>
                         </div>
                         <div class="form-row">
                             <div class="col-md-12">
@@ -179,7 +177,7 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                             </div>
                         </div>
                         <div class="text-center mt-2">
-                            <button class="btn danger-color-dark btn-block btn-md" name="btnRecuperarSenha" id="btn_recuperarSenha" type="submit">Enviar para email</button>
+                            <button class="btn danger-color-dark btn-block font-weight-bold" name="btnRecuperarSenha" id="btn_recuperarSenha" type="submit">Enviar para email</button>
                         </div>
                         <input type="hidden" name="method" value="insert"/>
                     </form><!-- ./End Form -->

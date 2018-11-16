@@ -14,8 +14,7 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                         <div class="card-avatar">
                             <div class="zoom">
                                 <input type="file" required id="user-add-input" onchange="readURL(this, 'user-add');" name="pes_foto" style="display:none"/>
-                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-user-add"
-                                     onclick='addImageUser()'/>
+                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-user-add" onclick='addImageUser()'/>
                             </div> <!-- ./End zoom -->
                         </div> <!-- ./End card-avatar -->
                         <div class="content">
@@ -100,7 +99,7 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Complemento" class="form-control" maxlength="250" required id="pesComplemento" name="end_complemento"
+                                            <input type="text" placeholder="Complemento (Opcional)" class="form-control" maxlength="250" id="pesComplemento" name="end_complemento"
                                                    autocomplete="on">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->

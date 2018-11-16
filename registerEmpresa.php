@@ -1,5 +1,5 @@
 <?php
-$titulo = "Registro de pessoa juridica";
+$titulo = "Cadastrar Empresa - KataGalo";
 require_once "./config.php";
 include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 

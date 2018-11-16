@@ -9,7 +9,7 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
 <main>
     <section class="text-center">
         <h1 class="h1-responsive font-weight-bold text-center animated bounceInUp">DESTAQUE DO DIA</h1>
-        <hr class="container">
+        <hr class="container"/>
         <div id="multi-item-example" class="carousel slide carousel-multi-item container" data-ride="carousel">
 
             <div class="controls-top container animated bounceInUp">
@@ -167,7 +167,7 @@ include PROJECT_ROOT."/html/_partHTML/header.index.php" ?>
                 <div class="card card-cascade narrower card-ecommerce">
                     <div class="align-items-center overlay zoom img-produtos container">
                         <a href="page-mercado.php">
-                            <img src="images/logo_mercados/mercado_a_luzitana.jpg" id="imgMercado" name="img_fotoComercio" class="card-img-top" alt="">
+                            <img src="images/logo_mercados/img-test-mercado.jpg" id="imgMercado" name="img_fotoComercio" class="card-img-top" alt="">
                         </a>
                     </div> <!-- Card image -->
                     <div class="card-body card-body-cascade text-center">

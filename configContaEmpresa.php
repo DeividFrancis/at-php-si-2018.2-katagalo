@@ -36,7 +36,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                 <div class="col-md-8 mb-4">
                     <div class="card">
                         <div class="card-header info-color-dark">
-                            <p class="my-0 h3-responsive white-text text-center font-weight-bold">Dados do Perfil</p>
+                            <p class="my-0 h2-responsive text-uppercase white-text text-center font-weight-bold">Dados do Perfil</p>
                         </div>
                         <div class="card-content">
                             <form class="container" action="configContaEmpresa.php" method="post" style="color: #aaa;">
@@ -184,8 +184,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control"
-                                              maxlength="250" length="250" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-5">
