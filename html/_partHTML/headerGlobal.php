@@ -110,9 +110,14 @@
         <form class="search-form form-inline mr-auto ml-auto mr-md-5 my-2 my-md-0" role="search" method="POST"
               autocomplete="on">
             <div class="input-group waves-dark">
-                <input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-4 my-md-2" id="input-pesq" size="80px" placeholder="Pesquisar aqui..." aria-label="Search" aria-describedby="basic-addon2" style="height: 3.5rem;">
+                <input type="search" class="form-control mr-sm-5 ml-auto mr-0 mr-md-auto my-4 my-md-2" id="input-pesq" size="80px" placeholder="Pesquisar aqui..." aria-label="Search"
+                       aria-describedby="basic-addon2" style="height: 3.5rem;">
             </div>
         </form>
+
+<!--        <div class="col-md-6">-->
+<!--            <i class="far fa-clock fa-lg"></i>-->
+<!--        </div>-->
 
         <!-- Dropdown Menu Conta -->
         <div class="navbar-nav ml-auto ml-4 dropdown-backdrop">
@@ -125,25 +130,25 @@
                 </div>
             </li>
         </div>
-    </nav>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content modal-lg">
-                <div class="modal-header">
-                    <h5 class="modal-title red-text" id="logoutModalLabel">Deseja Sair?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="black-text font-weight-bold">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">Se você selecionar "SAIR", irá encerrar a sua sessão. Deseja mesmo assim?</div>
-                <div class="modal-footer">
-                    <button class="btn btn-cyan btn-md col-md-4" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-danger btn-md col-md-4" href="index.php">Sair</a>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                        <h5 class="modal-title red-text" id="logoutModalLabel">Deseja Sair?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="black-text font-weight-bold">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body black-text">Se você selecionar "SAIR", irá encerrar a sua sessão. Deseja mesmo assim?</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-cyan btn-md col-md-4" type="button" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-danger btn-md col-md-4" href="index.php">Sair</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 </header>

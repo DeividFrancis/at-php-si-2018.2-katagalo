@@ -176,10 +176,10 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                                 </div>
                             </div>
                         </div>
+                        <input type="hidden" name="method" value="insert"/>
                         <div class="text-center mt-2">
                             <button class="btn danger-color-dark btn-block font-weight-bold" name="btnRecuperarSenha" id="btn_recuperarSenha" type="submit">Enviar para email</button>
                         </div>
-                        <input type="hidden" name="method" value="insert"/>
                     </form><!-- ./End Form -->
                 </div>
             </div>

@@ -252,11 +252,12 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             </div> <!-- ./col-md-6 -->
                         </div> <!-- ./End form-row -->
 
+                        <input type="hidden" name="method" value="insert"/>
+
                         <div class="col-md-4 float-right">
                             <button type="submit" id="btnGravaPromo" class="btn btn-success btn-block">Gravar&nbsp;&nbsp;
                                 <i class="fa fa-check fa-lg"></i></button>
                         </div> <!-- ./End col-md-6 -->
-                        <input type="hidden" name="method" value="insert"/>
                     </form> <!-- ./End Form -->
                 </div> <!-- ./End modal-body mx-3 -->
             </div> <!-- ./End modal-content -->

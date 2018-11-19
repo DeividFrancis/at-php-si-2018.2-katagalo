@@ -105,6 +105,8 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                                     </div> <!-- ./End col-md-4 -->
                                 </div> <!-- ./End form-row -->
 
+                                <input type="hidden" name="method" value="insert"/>
+
                                 <div class="col-md-6 float-right">
                                     <div class="md-form">
                                         <button type="submit" name="btnConfirmarAtualizacao" class="btn btn-purple btn-block mb-2">Confirmar</button>
