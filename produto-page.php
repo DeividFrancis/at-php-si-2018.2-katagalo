@@ -84,7 +84,7 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
 <main>
     <section class="text-center">
         <h1 class="h1-responsive font-weight-bold text-center">Produtos em Destaques</h1>
-
+        <hr class="container"/>
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
             <div class="controls-top">
                 <button type="button" class="btn-floating btn btn-cyan" href="#multi-item-example" data-slide="prev" title="Anterior">

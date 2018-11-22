@@ -174,7 +174,7 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <span class="white-text h4-responsive" aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body mx-3">
+                <div class="modal-body">
                     <form class="text-center" action="#" method="post" style="color: #aaa;">
                         <div class="my-2 p-j grey-text">
                             <p>Para recuperar a sua senha, digita abaixo o email que foi cadastrado quando você fez o cadastro no nosso site.</p>

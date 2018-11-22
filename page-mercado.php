@@ -8,7 +8,7 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
 <main>
     <section class="text-center">
         <h1 class="h1-responsive font-weight-bold text-center">Produtos em Destaques</h1>
-
+        <hr class="container"/>
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
             <div class="controls-top">
                 <button type="button" class="btn-floating btn btn-cyan" href="#multi-item-example" data-slide="prev" title="Anterior">
@@ -200,6 +200,8 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
 
 <main>
     <section class="text-center container">
+        <h1 class="h1-responsive font-weight-bold text-center">Produtos em Destaques</h1>
+        <hr>
         <div class="row">
             <div class="col-md-4 mb-2 clearfix d-block">
                 <div class="card card-cascade narrower card-ecommerce">
