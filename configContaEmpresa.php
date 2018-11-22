@@ -43,7 +43,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaosocial" maxlength="250" required class="form-control">
+                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaoSocial" maxlength="250" required class="form-control">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">

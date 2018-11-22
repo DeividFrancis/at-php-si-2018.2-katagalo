@@ -24,12 +24,14 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 <div class="form-row">
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaosocial" maxlength="250" required class="form-control">
+                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaoSocial" maxlength="250" required class="form-control"
+                                   value="<?php echo isset($n->loj_razaoSocial) ? $n->loj_razaoSocial : null ?>">
                         </div> <!-- ./End md-form -->
                     </div><!-- ./End col-md-6 -->
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" required class="form-control">
+                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" required class="form-control"
+                                   value="<?php echo isset($n->loj_fantasia) ? $n->loj_fantasia : null ?>">
                         </div> <!-- ./End md-form -->
                     </div><!-- ./End col-md-6 -->
                 </div> <!-- ./End form-row -->
@@ -37,12 +39,14 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 <div class="form-row">
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" class="form-control">
+                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" class="form-control"
+                                   value="<?php echo isset($n->pes_login) ? $n->pes_login : null ?>">
                         </div> <!-- ./End md-form -->
                     </div><!-- ./End col-md-6 -->
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" maxlength="9" required class="form-control" autocomplete="on">
+                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" maxlength="9" required class="form-control" autocomplete="on"
+                                   value="<?php echo isset($n->end_cep) ? $n->end_cep : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-6 -->
                 </div> <!-- ./End form-row -->
@@ -50,18 +54,20 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 <div class="form-row">
                     <div class="col-md-4">
                         <div class="md-form">
-                            <input type="text" placeholder="Endereço" maxlength="250" class="form-control" id="pesEndereco" required name="end_endereco"
-                                   autocomplete="on">
+                            <input type="text" placeholder="Endereço" maxlength="250" class="form-control" id="pesEndereco" required name="end_endereco" autocomplete="on"
+                                   value="<?php echo isset($n->end_endereco) ? $n->end_endereco : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-4 -->
                     <div class="col-md-4">
                         <div class="md-form">
-                            <input type="text" placeholder="Número" class="form-control" id="pesNumero" required name="end_numero" autocomplete="on">
+                            <input type="text" placeholder="Número" class="form-control" id="pesNumero" required name="end_numero" autocomplete="on"
+                                   value="<?php echo isset($n->end_numero) ? $n->end_numero : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-4 -->
                     <div class="col-md-4">
                         <div class="md-form">
-                            <input type="text" placeholder="Cidade" maxlength="250" class="form-control" id="pesCidade" required name="cid_cidade" autocomplete="on">
+                            <input type="text" placeholder="Cidade" maxlength="250" class="form-control" id="pesCidade" required name="cid_cidade" autocomplete="on"
+                                   value="<?php echo isset($n->cid_cidade) ? $n->cid_cidade : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-4 -->
                 </div> <!-- ./End form-row -->
@@ -69,17 +75,20 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 <div class="form-row">
                     <div class="col-md-4">
                         <div class="md-form">
-                            <input type="text" placeholder="Estado" minlength="2" maxlength="2" class="form-control" id="pesEstado" required name="est_sigla" autocomplete="on">
+                            <input type="text" placeholder="Estado" minlength="2" maxlength="2" class="form-control" id="pesEstado" required name="est_sigla" autocomplete="on"
+                                   value="<?php echo isset($n->est_sigla) ? $n->est_sigla : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-4 -->
                     <div class="col-md-4">
                         <div class="md-form">
-                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" required name="end_bairro" autocomplete="on">
+                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" required name="end_bairro" autocomplete="on"
+                                   value="<?php echo isset($n->end_bairro) ? $n->end_bairro : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-4 -->
                     <div class="col-md-4">
                         <div class="md-form">
-                            <input type="text" placeholder="Complemento (Opcional)" class="form-control" id="pesComplemento" maxlength="250" name="end_complemento" autocomplete="on">
+                            <input type="text" placeholder="Complemento (Opcional)" class="form-control" id="pesComplemento" maxlength="250" name="end_complemento" autocomplete="on"
+                                   value="<?php echo isset($n->end_complemento) ? $n->end_complemento : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-4 -->
                 </div> <!-- ./End form-row -->
@@ -87,13 +96,14 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                 <div class="form-row">
                     <div class="col-md-6">
                         <div class="md-form">
-                            <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senha" name="pes_senha" class="form-control">
+                            <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senha" name="pes_senha" class="form-control"
+                                   value="<?php echo isset($n->pes_senha) ? $n->pes_senha : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-6 -->
                     <div class="col-md-6">
                         <div class="md-form">
                             <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" id="repetirSenha" name="pes_repetirSenha" required
-                                   class="form-control" onblur="verificaSenha()">
+                                   class="form-control" onblur="verificaSenha()" value="<?php echo isset($n->pes_repetirSenha) ? $n->pes_repetirSenha : null ?>">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-6 -->
                 </div> <!-- ./End form-row -->
