@@ -17,12 +17,6 @@
                         </a>
                     </li>
                     <hr>
-                    <li>
-                        <a class="waves-effect arrow-r" href="#">
-                            <i class="fas fa-shopping-bag fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Promoções em aberto
-                        </a>
-                    </li>
-                    <hr>
                 </ul>
             </li>
         </ul>

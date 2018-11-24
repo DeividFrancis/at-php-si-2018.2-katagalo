@@ -2,7 +2,7 @@
 $titulo = "Sua Conta - KataGalo";
 require_once "./config.php";
 include PROJECT_ROOT."/html/_partHTML/head.php";
-include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
+include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
@@ -160,12 +160,12 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" required class="form-control">
+                                    <input type="text" placeholder="Nome do produto" id="cadNomeProduto" name="pro_nome" maxlength="250" required class="form-control" value="<?php echo isset($n->pro_nome) ? $n->pro_nome : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="text" required id="CadProdutoPreco" name="pro_preco" placeholder="Preço do produto" class="form-control">
+                                    <input type="text" required id="CadProdutoPreco" name="pro_preco" placeholder="Preço do produto" class="form-control preco" value="<?php echo isset($n->pro_preco) ? $n->pro_preco : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
@@ -173,13 +173,12 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Código de barras" required id="CadProdutoBarcode" name="pro_barcode" class="form-control">
+                                    <input type="text" placeholder="Código de barras" required id="CadProdutoBarcode" name="pro_barcode" class="form-control" value="<?php echo isset($n->pro_barcode) ? $n->pro_barcode : null ?>">
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="pro_categoria"
-                                            searchable="Pesquise aqui...">
+                                    <select class="mdb-select md-form colorful-select dropdown-ins" required id="cadProdutoCategoria" name="pro_categoria" searchable="Pesquise aqui..." value="<?php echo isset($n->pro_categoria) ? $n->pro_categoria : null ?>">
                                         <option value="" disabled selected>Categoria do produto</option>
                                         <option value="1">Limpeza</option>
                                         <option value="2">Alimentação</option>
@@ -193,15 +192,14 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control"
-                                              maxlength="250" length="250" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control" maxlength="250" length="250" rows="8" value="<?php echo isset($n->pro_descricao) ? $n->pro_descrição : null ?>"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-5">
                                 <div class="md-form">
                                     <div class="mb-2 d-md-block container">
                                         <div class="float-right">
-                                            <input type="file" required id="produto-add-input" onchange="readURL(this, 'produto-add');" name="pro_imagem" style="display:none;"/>
+                                            <input type="file" required id="produto-add-input" onchange="readURL(this, 'produto-add');" name="pro_imagem" style="display:none;" value="<?php echo isset($n->pro_imagem) ? $n->pro_imagem : null ?>"/>
                                             <img class="d-md-block container d-block img-fluid img-produtos" src="images/logo_mercados/img-test-mercado.jpg" id="image-produto-add"
                                                  onclick='addImageProduto()'/>
                                         </div> <!-- ./End custom-file -->
@@ -238,17 +236,17 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Nome da Campanha" required id="cadNomeCampanha" name="cam_nome" maxlength="250" class="form-control">
+                                    <input type="text" placeholder="Nome da Campanha" required id="cadNomeCampanha" name="cam_nome" maxlength="250" class="form-control" value="<?php echo isset($n->cam_nome) ? $n->cam_nome : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Data de início da promoção" required id="dataInicioCampanha" name="cam_inicio" class="form-control date">
+                                    <input type="text" placeholder="Data de início da promoção" required id="dataInicioCampanha" name="cam_inicio" class="form-control date" value="<?php echo isset($n->cam_inicio) ? $n->cam_inicio : null ?>">
                                 </div>
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-4">
                                 <div class="md-form">
-                                    <input type="text" placeholder="Data final da campanha" required id="CadDataFinalCampanha" name="cam_fim" class="form-control date">
+                                    <input type="text" placeholder="Data final da campanha" required id="CadDataFinalCampanha" name="cam_fim" class="form-control date" value="<?php echo isset($n->cam_fim) ? $n->cam_fim : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
@@ -257,7 +255,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <textarea type="text" placeholder="Digite algo sobre a campanha" id="CadObservacaoCampanha" required name="cam_observacao"
-                                              class="md-textarea form-control" maxlength="2000" length="2000" rows="5"></textarea>
+                                              class="md-textarea form-control" maxlength="2000" length="2000" rows="5" value="<?php echo isset($n->cam_observacao) ? $n->cam_observacao : null ?>"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                         </div> <!-- ./End form-row -->

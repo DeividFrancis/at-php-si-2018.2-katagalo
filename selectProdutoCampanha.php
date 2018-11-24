@@ -1,8 +1,7 @@
 <?php
 $titulo = "Selecionar Produto - KataGalo";
 require_once "./config.php";
-include PROJECT_ROOT."/html/_partHTML/head.php";
-//include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
+include PROJECT_ROOT."/html/_partHTML/head.php"?>
 
 <body class="hidden-sn cyan-skin clearfix animated fadeIn">
 <main>
@@ -20,23 +19,27 @@ include PROJECT_ROOT."/html/_partHTML/head.php";
                         <div class="card-body card-body-cascade text-center">
                             <p class="card-title animated bounceIn form-check">
                                 <input type="checkbox" class="form-check-input" id="selectProduto" name="selectCheckboxProduto"/>
-                                <label class="form-check-label font-weight-bold" id="pro_nome" for="selectProduto">Nome do produto</label>
+                                <label class="form-check-label font-weight-bold" id="pro_nome" for="selectProduto" name="pro_nome">Nome do produto</label>
                             </p>
                             <div class="card-footer px-1">
                                 <div class="col-md-4 mb-2 float-left">
                                     <del>
-                                        <span class="text-center h4-responsive font-weight-bold red-text" name="precoProduto" id="pro_preco">0,00</span>
+                                        <span class="text-center h4-responsive font-weight-bold red-text" name="precoProduto" id="pro_preco"
+                                              value="<?php echo isset($n->pro_preco) ? $n->pro_preco : null ?>">0,00</span>
                                     </del>
                                 </div>
                                 <div class="col-md-8 float-right">
-                                    <input type="text" class="form-control text-center font-weight-bold" id="camp_precopromocao" name="campanhaProdutoPreco" value="0,00">
+                                    <input type="text" class="form-control text-center font-weight-bold preco" name="camp_precopromocao" id="campanhaProdutoPreco"
+                                           value="<?php echo isset($n->camp_precopromocao) ? $n->camp_precopromocao : null ?>">
                                 </div>
                             </div> <!-- ./End card-footer px-1 -->
-                            <input type="hidden" name="method" value="insert"/>
                         </div> <!-- ./End card-body card-body-cascade text-center -->
                     </div> <!-- ./End card card-cascade narrower card-ecommerce -->
                 </div> <!-- ./End ol-md-4 mb-2 clearfix d-md-block -->
             </div> <!-- ./End row -->
+
+            <input type="hidden" name="method" value="insert"/>
+
             <div class="container col-md-4 mt-2 float-right">
                 <button class="btn success-color-dark btn-block btn-lg" id="btnGravarPromo" type="submit">Gravar promoção</button>
             </div>
