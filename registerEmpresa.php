@@ -7,12 +7,10 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 <main class="container">
     <div class="card">
         <h6 class="card-header info-color-dark text-center">
-            <p class="h5-responsive white-text float-left font-weight-bold" data-toggle="tooltip" data-placement="left" title="Voltar para área de login">
-                <a href="index.php">
-                    <i class="fas fa-arrow-left fa-2x white-text"></i>
-                </a>
+            <p class="h5-responsive white-text float-left font-weight-bold my-2" title="Voltar para área de login">
+                <a href="index.php"><i class="fas fa-arrow-left fa-2x white-text"></i></a>
             </p>
-            <p class="my-3 h3-responsive white-text text-center font-weight-bold">Cadastre sua empresa</p>
+            <p class="my-2 h3-responsive white-text text-center font-weight-bold">Cadastre sua empresa</p>
         </h6>
 
         <div class="card-body pt-0">

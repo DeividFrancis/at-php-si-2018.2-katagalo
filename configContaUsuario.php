@@ -14,11 +14,13 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                         <div class="card-avatar">
                             <div class="zoom">
                                 <input type="file" required id="user-add-input" onchange="readURL(this, 'user-add');" name="pes_foto" style="display:none"/>
-                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-user-add" onclick='addImageUser()'/>
+                                <img class="rounded-circle container d-block img-fluid logo-perfil" src="images/logo_mercados/img-test-mercado.jpg" id="image-user-add"
+                                     onclick='addImageUser()'/>
                             </div> <!-- ./End zoom -->
                         </div> <!-- ./End card-avatar -->
                         <div class="content">
-                            <p class="card-title font-weight-bold h3-responsive text-center text-uppercase" id="nomeUsuario" name="pes_nome">Nome do usuario</p>
+                            <p class="card-title font-weight-bold h3-responsive text-center text-uppercase" id="nomeUsuario" name="pes_nome"
+                               value="<?php echo isset($n->pes_nome) ? $n->pes_nome : null ?>">Nome do usuario</p>
                         </div> <!-- ./End content -->
                     </div> <!-- ./End card card-profile container -->
                     <div class="mb-2">
@@ -41,12 +43,14 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Nome Completo" maxlength="250" required id="pesNomeCompleto" name="pes_nome" class="form-control">
+                                            <input type="text" placeholder="Nome Completo" maxlength="250" required id="pesNomeCompleto" name="pes_nome" class="form-control"
+                                                   value="<?php echo isset($n->pes_nome) ? $n->pes_nome : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="email" placeholder="Email" maxlength="250" required id="pesEmailLogin" name="pes_login" class="form-control">
+                                            <input type="email" placeholder="Email" maxlength="250" required id="pesEmailLogin" name="pes_login" class="form-control"
+                                                   value="<?php echo isset($n->pes_login) ? $n->pes_login : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                 </div> <!-- ./End form-row -->
@@ -55,12 +59,13 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                                     <div class="col-md-6">
                                         <div class="md-form">
                                             <input type="text" placeholder="CPF/CNPJ" class="form-control cpfcnpj" required id="pesCpfCnpj" name="pes_receita"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->pes_receita) ? $n->pes_receita : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CEP" class="form-control" maxlength="9" required id="pesCep" name="end_cep" autocomplete="on">
+                                            <input type="text" placeholder="CEP" class="form-control" maxlength="9" required id="pesCep" name="end_cep" autocomplete="on"
+                                                   value="<?php echo isset($n->end_cep) ? $n->end_cep : null ?>">
                                         </div> <!-- ./End col-md-4 -->
                                     </div> <!-- ./End form-row -->
                                 </div>
@@ -69,18 +74,19 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Endereço" maxlength="250" class="form-control" required id="pesEndereco" name="end_endereco"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->end_endereco) ? $n->end_endereco : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Número" maxlength="20" class="form-control" required id="pesNumero" name="end_numero" autocomplete="on">
+                                            <input type="text" placeholder="Número" maxlength="20" class="form-control" required id="pesNumero" name="end_numero" autocomplete="on"
+                                                   value="<?php echo isset($n->end_numero) ? $n->end_numero : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Cidade" maxlength="250" class="form-control" required id="pesCidade" name="cid_cidade"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->cid_cidade) ? $n->cid_cidade : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                 </div> <!-- ./End form-row -->
@@ -89,18 +95,19 @@ include PROJECT_ROOT."/html/_partHTML/headerGlobal.php" ?>
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Estado" minlength="2" maxlength="2" class="form-control" required id="pesEstado" name="est_sigla"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->est_sigla) ? $n->est_sigla : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Bairro" class="form-control" maxlength="250" required id="pesBairro" name="end_bairro" autocomplete="on">
+                                            <input type="text" placeholder="Bairro" class="form-control" maxlength="250" required id="pesBairro" name="end_bairro" autocomplete="on"
+                                                   value="<?php echo isset($n->end_bairro) ? $n->end_bairro : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Complemento (Opcional)" class="form-control" maxlength="250" id="pesComplemento" name="end_complemento"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->end_complemento) ? $n->end_complemento : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                 </div> <!-- ./End form-row -->

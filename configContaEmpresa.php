@@ -19,7 +19,8 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                             </div> <!-- ./End zoom -->
                         </div> <!-- ./End card-avatar -->
                         <div class="content">
-                            <p class="card-title font-weight-bold h3-responsive text-center">NOME DA EMPRESA</p>
+                            <p class="card-title font-weight-bold h3-responsive text-center" id="nomeEmpresa" name="loj_fantasia"
+                               value="<?php echo isset($n->loj_fantasia) ? $n->loj_fantasia : null ?>">NOME DA EMPRESA</p>
                         </div> <!-- ./End content -->
                     </div> <!-- ./End card card-profile container -->
                     <div class="mb-2">
@@ -43,25 +44,14 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaoSocial" maxlength="250" required class="form-control">
+                                            <input type="text" placeholder="Razão social" id="razaoSocialPj" name="loj_razaoSocial" maxlength="250" required class="form-control"
+                                                   value="<?php echo isset($n->loj_razaoSocial) ? $n->loj_razaoSocial : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" required class="form-control">
-                                        </div> <!-- ./End md-form -->
-                                    </div><!-- ./End col-md-6 -->
-                                </div> <!-- ./End form-row -->
-
-                                <div class="form-row">
-                                    <div class="col-md-6">
-                                        <div class="md-form">
-                                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" class="form-control">
-                                        </div> <!-- ./End md-form -->
-                                    </div><!-- ./End col-md-6 -->
-                                    <div class="col-md-6">
-                                        <div class="md-form">
-                                            <input type="text" placeholder="CNPJ" class="form-control" required id="cnpjEmpresa" name="pes_receita" autocomplete="on">
+                                            <input type="text" placeholder="Nome fantasia" id="nomeFantasia" name="loj_fantasia" maxlength="250" required class="form-control"
+                                                   value="<?php echo isset($n->loj_fantasia) ? $n->loj_fantasia : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div><!-- ./End col-md-6 -->
                                 </div> <!-- ./End form-row -->
@@ -69,12 +59,29 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" maxlength="9" required class="form-control" autocomplete="on">
+                                            <input type="email" placeholder="Email Corporativo" required id="emailCorporativo" name="pes_login" maxlength="250" class="form-control"
+                                                   value="<?php echo isset($n->pes_login) ? $n->pes_login : null ?>">
+                                        </div> <!-- ./End md-form -->
+                                    </div><!-- ./End col-md-6 -->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="text" placeholder="CNPJ" class="form-control" required id="cnpjEmpresa" name="pes_receita" autocomplete="on"
+                                                   value="<?php echo isset($n->peS_receita) ? $n->pes_receita : null ?>">
+                                        </div> <!-- ./End md-form -->
+                                    </div><!-- ./End col-md-6 -->
+                                </div> <!-- ./End form-row -->
+
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="text" placeholder="CEP" id="pesCep" name="end_cep" maxlength="9" required class="form-control" autocomplete="on"
+                                                   value="<?php echo isset($n->end_cep) ? $n->end_cep : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Localização" id="pesLocalizacao" name="end_localizacao" maxlength="250" class="form-control">
+                                            <input type="text" placeholder="Localização" id="pesLocalizacao" name="end_localizacao" maxlength="250" class="form-control"
+                                                   value="<?php echo isset($n->end_localizacao) ? $n->end_localizacao : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-6 -->
                                 </div> <!-- ./End form-row -->
@@ -83,18 +90,19 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Endereço" maxlength="250" class="form-control" id="pesEndereco" required name="end_endereco"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->end_endereço) ? $n->loj_fantasia : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Número" class="form-control" id="pesNumero" required name="end_numero" autocomplete="on">
+                                            <input type="text" placeholder="Número" class="form-control" id="pesNumero" required name="end_numero" autocomplete="on"
+                                                   value="<?php echo isset($n->end_numero) ? $n->end_numero : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Cidade" maxlength="250" class="form-control" id="pesCidade" required name="cid_cidade"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->cid_cidade) ? $n->cid_cidade : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                 </div> <!-- ./End form-row -->
@@ -103,18 +111,19 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Estado" min="2" maxlength="2" class="form-control" id="pesEstado" required name="est_sigla"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->est_sigla) ? $n->est_sigla : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
-                                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" required name="end_bairro" autocomplete="on">
+                                            <input type="text" placeholder="Bairro" class="form-control" id="pesBairro" maxlength="250" required name="end_bairro" autocomplete="on"
+                                                   value="<?php echo isset($n->end_bairro) ? $n->end_bairro : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                     <div class="col-md-4">
                                         <div class="md-form">
                                             <input type="text" placeholder="Complemento" class="form-control" id="pesComplemento" maxlength="250" name="end_complemento"
-                                                   autocomplete="on">
+                                                   autocomplete="on" value="<?php echo isset($n->end_complemento) ? $n->end_complemento : null ?>">
                                         </div> <!-- ./End md-form -->
                                     </div> <!-- ./End col-md-4 -->
                                 </div> <!-- ./End form-row -->
@@ -137,7 +146,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
 <!-- ----------------- MODAL DE CADASTRAR PRODUTO ------------------ -->
 <!-- --------------------------------------------------------------- -->
 <main>
-    <div class="modal animated bounceIn" id="modalCadastroProduto" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
+    <div class="modal animated fade" id="modalCadastroProduto" tabindex="-1" role="dialog" aria-labelledby="modalCadProduto" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header info-color-dark text-center">
@@ -184,7 +193,8 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="md-form">
-                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control" maxlength="250" length="250" rows="8"></textarea>
+                                    <textarea type="text" placeholder="Descrição do produto" id="CaddescricaoProduto" required name="pro_descricao" class="md-textarea form-control"
+                                              maxlength="250" length="250" rows="8"></textarea>
                                 </div> <!-- ./md-form -->
                             </div> <!-- ./col-md-6 -->
                             <div class="col-md-5">
@@ -214,7 +224,7 @@ include PROJECT_ROOT."/html/_partHTML/headerConfigContaEmpresa.php" ?>
 <!-- ----------------- MODAL DE CADASTRO CAMPANHA ------------------ -->
 <!-- --------------------------------------------------------------- -->
 <main>
-    <div class="modal animated bounceIn" id="modalCadastroCampanha" tabindex="-1" role="dialog" aria-labelledby="modalCadCampanha" aria-hidden="true">
+    <div class="modal animated fade" id="modalCadastroCampanha" tabindex="-1" role="dialog" aria-labelledby="modalCadCampanha" aria-hidden="true">
         <div class="modal-dialog modal-fluid container" role="document">
             <div class="modal-content">
                 <div class="modal-header info-color-dark text-center">

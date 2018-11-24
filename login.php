@@ -4,10 +4,10 @@ require_once "./config.php";
 include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
 <body class="hidden-sn elegant-color clearfix">
-<main class="container animated bounceIn max-vertical">
+<main class="container animated fadeIn max-vertical">
     <div class="card">
         <h6 class="card-header info-color-dark float-left py-3">
-            <p class="my-3 h5-responsive white-text float-left font-weight-bold" data-toggle="tooltip" data-placement="left" title="Voltar para página inicial">
+            <p class="my-3 h5-responsive white-text float-left font-weight-bold" title="Voltar para página inicial">
                 <a href="index.php">
                     <i class="fas fa-arrow-left fa-2x white-text"></i>
                 </a>
@@ -58,7 +58,7 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 <!-- ----------------- MODAL DE REGISTRO --------------------------- -->
 <!-- --------------------------------------------------------------- -->
 <main>
-    <div class="modal animated bounceIn" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="modalRegisterConta" aria-hidden="true">
+    <div class="modal animated fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="modalRegisterConta" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header info-color-dark text-center">
@@ -165,7 +165,7 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 <!-- ----------------- MODAL DE RECUPERAR SENHA -------------------- -->
 <!-- --------------------------------------------------------------- -->
 <main>
-    <div class="modal animated bounceIn" id="modalRecupeForm" tabindex="-1" role="dialog" aria-labelledby="modalRecuperarConta" aria-hidden="true">
+    <div class="modal animated fade" id="modalRecupeForm" tabindex="-1" role="dialog" aria-labelledby="modalRecuperarConta" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header danger-color-dark text-center">
@@ -190,12 +190,12 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                         <input type="hidden" name="method" value="insert"/>
                         <div class="text-center mt-2">
                             <button class="btn danger-color-dark btn-block font-weight-bold" name="btnRecuperarSenha" id="btn_recuperarSenha" type="submit">Enviar para email</button>
-                        </div>
+                        </div><!-- ./End text-center mt-2 -->
                     </form><!-- ./End Form -->
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><!-- ./End modal-body -->
+            </div><!-- ./End modal-content -->
+        </div><!-- ./End modal-dialog modal-dialog-centered modal-lg -->
+    </div><!-- ./End modal animated bounceIn -->
 </main> <!-- ./End main -->
 
 <?php

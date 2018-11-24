@@ -16,17 +16,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-
-<!-- // Tooltips -->
 <script type="text/javascript" src="js/popper.min.js"></script>
-
-<!-- // Bootstrap core JavaScript -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-<!-- // MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
-
-<!-- // Outros JS's -->
 <script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
 <script type="text/javascript" src="js/ajax.js"></script>
 <script type="text/javascript" src="js/mascaras.js"></script>
