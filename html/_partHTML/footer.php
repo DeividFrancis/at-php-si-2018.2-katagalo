@@ -25,7 +25,7 @@
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
-<script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
+<script type="text/javascript" src="js/showPassword.js"></script>
 <script type="text/javascript" src="js/ajax.js"></script>
 <script type="text/javascript" src="js/mascaras.js"></script>
 <script type="text/javascript" src="js/uploadImg.js"></script>

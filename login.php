@@ -3,7 +3,7 @@ $titulo = "Entrar - KataGalo";
 require_once "./config.php";
 include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
-<body class="hidden-sn elegant-color clearfix">
+<body class="hidden-sn elegant-color animated fadeIn clearfix">
 <main class="container animated fadeIn max-vertical">
     <div class="card">
         <h6 class="card-header info-color-dark float-left py-3">
@@ -17,20 +17,26 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
         <!--Card content-->
         <div class="card-body px-lg-5 pt-0">
-            <form class="text-center" action="#" method="post" style="color: #aaa;">
+            <form action="#" method="post" style="color: #aaa;">
                 <div class="form-row">
                     <div class="col-md-6">
-                        <div class="md-form">
-                            <input type="email" placeholder="Digite o email" class="form-control" required id="login_email" name="pes_login" autocomplete="on">
+                        <div class="md-form input-group">
+                            <input type="email" placeholder="Email" class="form-control border rounded" required id="login_email" name="pes_login" autocomplete="on">
                         </div> <!-- ./End md-form -->
                     </div> <!-- ./End col-md-6 -->
                     <div class="col-md-6">
-                        <div class="md-form">
-                            <input type="password" placeholder="Digite a senha" minlength="8" maxlength="32" length="32" id="login_senha" name="pes_senha" required
-                                   class="form-control">
-                        </div> <!-- ./End md-form -->
-                    </div> <!-- ./End col-md-6 -->
-                </div> <!-- ./End form-row -->
+                        <div class="md-form input-group">
+                            <input type="password" class="form-control border rounded" placeholder="Senha" minlength="8" maxlength="32" id="login_senha" name="pes_senha" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-info m-0 px-2" type="button" id="showLoginPassword" title="Mostrar senha">
+                                    <i class="fas fa-eye fa-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="hidden" name="method" value="insert"/>
 
                 <div class="text-center float-right col-md-4 d-block small mt-2">
                     <button class="btn success-color-dark btn-block btn-lg font-weight-bold" id="btnLogin" type="submit">Entrar&nbsp;&nbsp;
@@ -71,14 +77,14 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                     <form action="configContaUsuario.php" method="post" style="color: #aaa;">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Nome Completo" maxlength="250" id="registerNomeCompleto" required name="pes_nome" class="form-control"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="Nome Completo" maxlength="250" id="registerNomeCompleto" required name="pes_nome" class="form-control border rounded"
                                            value="<?php echo isset($n->pes_nome) ? $n->pes_nome : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="email" placeholder="Email" maxlength="250" required id="pesEmailRegister" name="pes_login" class="form-control"
+                                <div class="md-form input-group">
+                                    <input type="email" placeholder="Email" maxlength="250" required id="pesEmailRegister" name="pes_login" class="form-control border rounded"
                                            value="<?php echo isset($n->pes_login) ? $n->pes_login : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
@@ -86,14 +92,15 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
                         <div class="form-row">
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="CEP" class="form-control" maxlength="9" required id="pesCep" name="end_cep" autocomplete="on"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="CEP" class="form-control border rounded" maxlength="9" required id="pesCep" name="end_cep" autocomplete="on"
                                            value="<?php echo isset($n->end_cep) ? $n->end_cep : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Endereço" maxlength="250" class="form-control" required id="pesEndereco" name="end_endereco" autocomplete="on"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="Endereço" maxlength="250" class="form-control border rounded" required id="pesEndereco" name="end_endereco"
+                                           autocomplete="on"
                                            value="<?php echo isset($n->end_endereco) ? $n->end_endereco : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
@@ -101,14 +108,16 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
                         <div class="form-row">
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Número" maxlength="20" class="form-control" required id="pesNumero" name="end_numero" autocomplete="on"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="Número" maxlength="20" class="form-control border rounded" required id="pesNumero" name="end_numero"
+                                           autocomplete="on"
                                            value="<?php echo isset($n->end_numero) ? $n->end_numero : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Cidade" maxlength="250" class="form-control" required id="pesCidade" name="cid_cidade" autocomplete="on"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="Cidade" maxlength="250" class="form-control border rounded" required id="pesCidade" name="cid_cidade"
+                                           autocomplete="on"
                                            value="<?php echo isset($n->cid_cidade) ? $n->cid_cidade : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
@@ -116,14 +125,16 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
                         <div class="form-row">
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="UF" min="2" maxlength="2" class="form-control" required id="pesEstado" name="est_sigla" autocomplete="on"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="UF" min="2" maxlength="2" class="form-control border rounded" required id="pesEstado" name="est_sigla"
+                                           autocomplete="on"
                                            value="<?php echo isset($n->est_sigla) ? $n->est_sigla : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" placeholder="Bairro" class="form-control" maxlength="250" required id="pesBairro" name="end_bairro" autocomplete="on"
+                                <div class="md-form input-group">
+                                    <input type="text" placeholder="Bairro" class="form-control border rounded" maxlength="250" required id="pesBairro" name="end_bairro"
+                                           autocomplete="on"
                                            value="<?php echo isset($n->end_bairro) ? $n->end_bairro : null ?>">
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-4 -->
@@ -131,18 +142,30 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
 
                         <div class="form-row">
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" length="32" required id="senha" name="pes_senha"
-                                           class="form-control" value="<?php echo isset($n->pes_senha) ? $n->pes_senha : null ?>">
+                                <div class="md-form input-group">
+                                    <input type="password" placeholder="Senha" minlength="8" maxlength="32" required id="senha" name="pes_senha"
+                                           class="form-control border rounded" value="<?php echo isset($n->pes_senha) ? $n->pes_senha : null ?>">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-info m-0 px-2" type="button" id="showRegisterPassword" title="Mostrar senha">
+                                            <i class="fas fa-eye fa-lg"></i>
+                                        </button>
+                                    </div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                             <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" length="32" required id="repetirSenha" name="pes_repetirSenha"
-                                           class="form-control" onblur="verificaSenha()" value="<?php echo isset($n->pes_repetirSenha) ? $n->pes_repetirSenha : null ?>">
+                                <div class="md-form input-group">
+                                    <input type="password" placeholder="Repetir senha" minlength="8" maxlength="32" required id="repetirSenha" name="pes_repetirSenha"
+                                           class="form-control border rounded" onblur="verificaSenha()" value="<?php echo isset($n->pes_repetirSenha) ? $n->pes_repetirSenha : null ?>">
+                                    <div class="input-group-append">
+                                            <button class="btn btn-info m-0 px-2" type="button" id="showConfirmarRegisterPasswordUsuario" title="Mostrar senha">
+                                            <i class="fas fa-eye fa-lg"></i>
+                                        </button>
+                                    </div>
                                 </div> <!-- ./End md-form -->
                             </div> <!-- ./End col-md-6 -->
                         </div> <!-- ./End form-row -->
+
+                        <input type="hidden" name="method" value="insert"/>
 
                         <div class="col-md-6 mb-2 float-left">
                             <button class="btn btn-success btn-block btn-lg font-weight-bold" id="btnRegistrarPessoaFisica" type="submit">Registar&nbsp;&nbsp;
@@ -187,7 +210,9 @@ include PROJECT_ROOT."/html/_partHTML/head.php" ?>
                                 </div>
                             </div>
                         </div>
+
                         <input type="hidden" name="method" value="insert"/>
+
                         <div class="text-center mt-2">
                             <button class="btn danger-color-dark btn-block font-weight-bold" name="btnRecuperarSenha" id="btn_recuperarSenha" type="submit">Enviar para email</button>
                         </div><!-- ./End text-center mt-2 -->

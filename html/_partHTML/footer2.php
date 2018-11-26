@@ -1,13 +1,10 @@
 <!--Footer-->
-<footer class="page-footer text-center text-md-left pt-4">
-
-    <!--Copyright-->
+<footer class="page-footer text-center text-md-left pt-4 footer-size">
     <div class="footer-copyright py-3 text-left">
         <div class="container-fluid text-center">
-            <p class="white-text">Todo os direitos reservados &copy; <a href="index.php" class="grey-text">KataGalo</a></p>
+            <p class="white-text">Todo os direitos reservados &copy; <a href="index.php" class="grey-text1e ''">KataGalo</a></p>
         </div>
     </div>
-    <!--/.Copyright-->
 
 </footer>
 <!--/.End Footer-->
@@ -19,7 +16,7 @@
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
-<script type="text/javascript" src="js/limiteDeCaracteres.js"></script>
+<script type="text/javascript" src="js/showPassword.js"></script>
 <script type="text/javascript" src="js/ajax.js"></script>
 <script type="text/javascript" src="js/mascaras.js"></script>
 <script type="text/javascript" src="js/uploadImg.js"></script>
